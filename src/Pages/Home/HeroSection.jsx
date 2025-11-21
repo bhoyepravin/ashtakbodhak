@@ -58,13 +58,13 @@ const HeroSection = () => {
               for India
             </h1>
 
-            <p className="text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed">
+            {/* <p className="text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed">
               AshtakBodhak - Your trusted partner in navigating the digital
               transformation with robust Information & Cybersecurity awareness
               and training solutions.
-            </p>
+            </p> */}
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            {/* <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Link
                 to="/service-offerings"
                 className="bg-gradient-to-r from-[#F8810A] to-[#FA540C] hover:from-[#FA540C] hover:to-[#F8810A] text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 text-center"
@@ -75,10 +75,10 @@ const HeroSection = () => {
                 <Play className="w-5 h-5" />
                 <span>Watch Overview</span>
               </button>
-            </div>
+            </div> */}
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-8">
+            {/* <div className="grid grid-cols-3 gap-8">
               {stats.map((stat, index) => (
                 <motion.div
                   key={index}
@@ -96,7 +96,7 @@ const HeroSection = () => {
                   <div className="text-gray-300 text-sm">{stat.label}</div>
                 </motion.div>
               ))}
-            </div>
+            </div> */}
           </motion.div>
 
           {/* Visual Section */}
