@@ -196,7 +196,7 @@ const ServicesPage = () => {
         </AnimatePresence>
 
         {/* Stats Section */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
@@ -234,10 +234,10 @@ const ServicesPage = () => {
               Industry Sectors
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* CTA Section */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}
@@ -253,7 +253,7 @@ const ServicesPage = () => {
           <button className="px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-sm sm:text-base lg:text-lg bg-[#F8810A] text-white">
             Contact Us Today
           </button>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );
