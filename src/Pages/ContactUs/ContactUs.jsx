@@ -121,7 +121,7 @@ Thank you!
   };
 
   return (
-    <div className="min-h-screen pt-30 bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen pt-18 bg-gradient-to-br from-gray-50 to-white">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-[#184E43] to-[#2359B0] text-white">
         <div className="container mx-auto px-4 text-center">

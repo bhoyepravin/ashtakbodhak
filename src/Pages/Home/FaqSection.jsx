@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Play, Pause, Volume2, VolumeX, Maximize } from "lucide-react";
 import faqData from "../../Constant/Home/faqData";
+import { useNavigate } from "react-router-dom";
 
 const FaqSection = () => {
   const [activeFaq, setActiveFaq] = useState(null);
@@ -57,6 +58,8 @@ const FaqSection = () => {
       }
     }
   };
+
+  const navigate = useNavigate();
 
   return (
     <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
@@ -254,7 +257,10 @@ const FaqSection = () => {
               Our cybersecurity experts are here to help you with personalized
               guidance.
             </p>
-            <button className="bg-[#FB7E06] hover:bg-[#e57306] text-white px-8 py-3 rounded-lg font-semibold transition-colors transform hover:scale-105">
+            <button
+              onClick={() => navigate("/contact")}
+              className="bg-[#FB7E06] hover:bg-[#e57306] text-white px-8 py-3 rounded-lg font-semibold transition-colors transform hover:scale-105"
+            >
               Contact Our Experts
             </button>
           </div>

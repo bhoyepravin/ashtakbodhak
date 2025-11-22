@@ -23,6 +23,8 @@ import ManufacturingSectorPage from "./Pages/Services/ManufacturingSectorPage";
 import InsuranceNBFCPage from "./Pages/Services/InsuranceNBFCPage";
 import PharmaSectorPage from "./Pages/Services/PharmaSectorPage";
 import NetworkDataSecurityPage from "./Pages/Services/NetworkDataSecurityPage";
+import PageNotFound from "./Pages/ErrorPages/PageNotFound";
+import ServicesPage from "./Pages/Services/ServicesPage";
 
 function App() {
   const router = createBrowserRouter(
@@ -31,6 +33,8 @@ function App() {
         <Route index element={<Home />} />
 
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/service" element={<ServicesPage />} />
+
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/gen-z-edition" element={<TeenagersPage />} />
         <Route path="/griha-raksha" element={<HomeMakersPage />} />
@@ -55,6 +59,8 @@ function App() {
         />
         <Route path="/insurance-nbfc" element={<InsuranceNBFCPage />} />
         <Route path="/pharma-sector" element={<PharmaSectorPage />} />
+
+        <Route path="*" element={<PageNotFound />} />
       </Route>
     )
   );

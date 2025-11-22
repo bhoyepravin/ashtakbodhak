@@ -36,7 +36,7 @@ const PharmaSectorPage = () => {
   return (
     <div className="min-h-screen pt-30 bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-[#70B486] via-[#184E43] to-[#2359B0] overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-br from-[#2359B0] via-[#184E43] to-[#1F5453] overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-10 left-10 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>

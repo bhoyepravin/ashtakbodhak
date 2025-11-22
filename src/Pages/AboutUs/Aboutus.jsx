@@ -28,7 +28,7 @@ const AboutUs = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {aboutData.stats.map((stat, index) => (
@@ -37,7 +37,7 @@ const AboutUs = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2 }}
-                className="text-center p-8 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                className="text-center p-8  rounded-lg  transition-shadow"
               >
                 <div className="text-3xl lg:text-4xl font-bold text-[#184E43] mb-2">
                   {stat.number}
@@ -79,7 +79,7 @@ const AboutUs = () => {
       </section>
 
       {/* Mission Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl lg:text-4xl font-bold text-center text-[#184E43] mb-12">
             {aboutData.mission.title}
@@ -91,7 +91,7 @@ const AboutUs = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2 }}
-                className="text-center p-6 border border-gray-200 rounded-lg hover:border-[#FB7E06] transition-colors"
+                className="text-center p-6  rounded-lg  transition-colors"
               >
                 <div className="text-4xl mb-4 text-[#2359B0]">{item.icon}</div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">
@@ -119,7 +119,7 @@ const AboutUs = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2 }}
-                className="bg-white p-8 rounded-lg shadow-sm border border-gray-200"
+                className="bg-gray-50 p-8 rounded-lg "
               >
                 <h3
                   className="text-2xl font-bold mb-6"

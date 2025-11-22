@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Shield, Users, Target, TrendingUp } from "lucide-react";
 import homeData from "../../Constant/Home/homeData";
+import { useNavigate } from "react-router-dom";
 
 // Animation components
 const AnimatedSection = ({ children, className = "" }) => {
@@ -10,7 +11,7 @@ const AnimatedSection = ({ children, className = "" }) => {
     triggerOnce: true,
     threshold: 0.1,
   });
-
+  const navigate = useNavigate();
   return (
     <motion.div
       ref={ref}
@@ -61,10 +62,16 @@ const Homesection = () => {
               transition={{ delay: 0.6, duration: 0.8 }}
               className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 sm:px-0"
             >
-              <button className="bg-[#FB7E06] hover:bg-[#e57306] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all transform hover:scale-105 shadow-lg w-full sm:w-auto">
+              <button
+                onClick={() => navigate("/contact")}
+                className="bg-[#FB7E06] hover:bg-[#e57306] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all transform hover:scale-105 shadow-lg w-full sm:w-auto"
+              >
                 {homeData.hero.cta.primary}
               </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-[#184E43] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all w-full sm:w-auto">
+              <button
+                onClick={() => navigate("/about")}
+                className="border-2 border-white text-white hover:bg-white hover:text-[#184E43] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all w-full sm:w-auto"
+              >
                 {homeData.hero.cta.secondary}
               </button>
             </motion.div>
@@ -246,9 +253,9 @@ const Homesection = () => {
               <p className="text-lg mb-6 opacity-90">
                 Join AshtakBodhak in building a cyber-resilient India
               </p>
-              <button className="bg-white text-[#184E43] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors transform hover:scale-105">
+              {/* <button className="bg-white text-[#184E43] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors transform hover:scale-105">
                 Partner With Us Today
-              </button>
+              </button> */}
             </div>
           </AnimatedSection>
         </div>

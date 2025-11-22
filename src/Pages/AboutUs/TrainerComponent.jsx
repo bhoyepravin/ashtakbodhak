@@ -64,7 +64,7 @@ const TrainerComponent = () => {
 
         {/* About Section */}
         <AnimatedSection className="mb-12">
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
+          <div className="bg-gray-50 rounded-2xl shadow-lg p-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               {/* Left Side - Image & Stats */}
               <div className="text-center lg:text-left">
@@ -157,7 +157,7 @@ const TrainerComponent = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-all"
+                className="bg-gray-50 rounded-xl  p-6 transition-all"
               >
                 <div className="text-3xl mb-4">{item.icon}</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
@@ -185,7 +185,7 @@ const TrainerComponent = () => {
                 initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white rounded-xl shadow-lg p-6 border-l-4"
+                className="bg-gray-50 rounded-xl p-6 "
                 style={{ borderLeftColor: category.color }}
               >
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
@@ -209,7 +209,7 @@ const TrainerComponent = () => {
 
         {/* Education & Credentials */}
         <AnimatedSection className="mb-12">
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
+          <div className="bg-gray-50 rounded-2xl p-8">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 {trainerData.education.title}
@@ -222,7 +222,7 @@ const TrainerComponent = () => {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
-                  className="text-center p-6 bg-gray-50 rounded-xl border border-gray-200"
+                  className="text-center p-6 bg-gray-50 rounded-xl "
                 >
                   <div className="text-3xl mb-4">{item.icon}</div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">
@@ -267,7 +267,7 @@ const TrainerComponent = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="bg-white rounded-2xl shadow-lg p-8 border border-gray-200"
+            className="bg-gray-50 p-8 "
           >
             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
               {trainerData.founder.name}
