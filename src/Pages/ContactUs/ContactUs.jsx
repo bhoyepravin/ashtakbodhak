@@ -83,7 +83,7 @@ ${name}
       return;
     }
 
-    const phoneNumber = "919876543210"; // Replace with your actual WhatsApp number
+    const phoneNumber = "919967045817"; // Replace with your actual WhatsApp number
     const message = generateWhatsAppMessage();
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
@@ -105,7 +105,7 @@ ${name}
   };
 
   const handleQuickMessage = (serviceType) => {
-    const phoneNumber = "919876543210"; // Replace with your actual WhatsApp number
+    const phoneNumber = "919967045817"; // Replace with your actual WhatsApp number
     const message = encodeURIComponent(
       `
 Hello AshtakBodhak Team!
@@ -121,7 +121,7 @@ Thank you!
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen pt-30 bg-gradient-to-br from-gray-50 to-white">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-[#184E43] to-[#2359B0] text-white">
         <div className="container mx-auto px-4 text-center">
@@ -208,7 +208,7 @@ Thank you!
       {/* Contact Form & Services */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             {/* Contact Form */}
             <AnimatedSection>
               <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
@@ -327,56 +327,6 @@ Thank you!
                 </form>
               </div>
             </AnimatedSection>
-
-            {/* Services & Info */}
-            <AnimatedSection>
-              <div className="space-y-8">
-                {/* Quick Services */}
-                <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
-                  <h3 className="text-2xl font-bold text-[#184E43] mb-6">
-                    Quick Service Inquiries
-                  </h3>
-                  <div className="space-y-4">
-                    {contactData.services.map((service, index) => (
-                      <motion.button
-                        key={index}
-                        whileHover={{ x: 5 }}
-                        onClick={() => handleQuickMessage(service.title)}
-                        className="w-full text-left p-4 border border-gray-200 rounded-lg hover:border-[#FB7E06] hover:bg-orange-50 transition-all group"
-                      >
-                        <div className="font-semibold text-gray-800 group-hover:text-[#FB7E06]">
-                          {service.title}
-                        </div>
-                        <div className="text-sm text-gray-600 mt-1">
-                          {service.description}
-                        </div>
-                      </motion.button>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Business Hours */}
-                <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
-                  <h3 className="text-2xl font-bold text-[#184E43] mb-6 flex items-center gap-3">
-                    <Clock size={24} />
-                    Business Hours
-                  </h3>
-                  <div className="space-y-3">
-                    {contactData.businessHours.map((schedule, index) => (
-                      <div
-                        key={index}
-                        className="flex justify-between items-center py-2 border-b border-gray-100 last:border-b-0"
-                      >
-                        <span className="font-medium text-gray-700">
-                          {schedule.day}
-                        </span>
-                        <span className="text-gray-600">{schedule.time}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </AnimatedSection>
           </div>
         </div>
       </section>
@@ -392,7 +342,7 @@ Thank you!
               Let's discuss how AshtakBodhak can help you build cyber resilience
             </p>
             <motion.a
-              href={`https://wa.me/919876543210?text=${encodeURIComponent(
+              href={`https://wa.me/919967045817?text=${encodeURIComponent(
                 "Hello! I would like to discuss cybersecurity services with AshtakBodhak."
               )}`}
               target="_blank"

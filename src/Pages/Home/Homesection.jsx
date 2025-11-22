@@ -26,7 +26,7 @@ const AnimatedSection = ({ children, className = "" }) => {
 
 const Homesection = () => {
   return (
-    <div className="min-h-screen pt-40 bg-white">
+    <div className="min-h-screen pt-20 bg-white">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#184E43] via-[#2359B0] to-[#1F5453] overflow-hidden">
         {/* Background Elements */}
@@ -41,7 +41,7 @@ const Homesection = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
-              className="text-5xl lg:text-7xl font-bold mb-6 leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight"
             >
               {homeData.hero.title}
             </motion.h1>
@@ -50,7 +50,7 @@ const Homesection = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
-              className="text-xl lg:text-2xl mb-8 text-gray-200 max-w-4xl mx-auto leading-relaxed"
+              className="text-lg sm:text-xl lg:text-2xl mb-6 sm:mb-8 text-gray-200 max-w-4xl mx-auto leading-relaxed px-4 sm:px-0"
             >
               {homeData.hero.subtitle}
             </motion.p>
@@ -59,12 +59,12 @@ const Homesection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.8 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 sm:px-0"
             >
-              <button className="bg-[#FB7E06] hover:bg-[#e57306] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 shadow-lg">
+              <button className="bg-[#FB7E06] hover:bg-[#e57306] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all transform hover:scale-105 shadow-lg w-full sm:w-auto">
                 {homeData.hero.cta.primary}
               </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-[#184E43] px-8 py-4 rounded-lg font-semibold text-lg transition-all">
+              <button className="border-2 border-white text-white hover:bg-white hover:text-[#184E43] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all w-full sm:w-auto">
                 {homeData.hero.cta.secondary}
               </button>
             </motion.div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import aboutData from "../../Constant/AboutUs/aboutData";
+import TrainerComponent from "./TrainerComponent";
 
 const AboutUs = () => {
   return (
@@ -168,6 +169,8 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+
+      <TrainerComponent />
     </div>
   );
 };

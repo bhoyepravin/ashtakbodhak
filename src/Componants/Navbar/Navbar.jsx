@@ -23,7 +23,7 @@ const Navbar = () => {
     { name: "About Us", path: "/about" },
     {
       name: "Service Offerings",
-      path: "/service-offerings",
+      path: "",
       submenu: [
         {
           name: "Individual Training",
@@ -200,10 +200,10 @@ const Navbar = () => {
                 {/* Enhanced Mega Menu for Service Offerings */}
                 {item.submenu && activeSubmenu === index && (
                   <motion.div
-                    className="absolute left-1/2 transform -translate-x-1/2 mt-4 w-[900px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300"
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3 }}
+                    className="absolute pt-[-2] left-1/2 transform -translate-x-1/2 mt-4 w-[900px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300"
+                    // initial={{ opacity: 0, y: 10 }}
+                    // animate={{ opacity: 1, y: 0 }}
+                    // transition={{ duration: 0.3 }}
                   >
                     <div className="bg-white rounded-xl shadow-2xl py-6 border border-gray-100">
                       <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white rotate-45 border-t border-l border-gray-100"></div>
@@ -260,7 +260,6 @@ const Navbar = () => {
                           </div>
                         ))}
                       </div>
-
                       {/* Bottom CTA */}
                       <div className="mt-6 pt-6 border-t border-gray-100 px-6">
                         <Link

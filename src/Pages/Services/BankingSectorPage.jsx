@@ -1,8 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Shield, BookOpen, Users, Target, Award, Download } from "lucide-react";
-import grcData from "../../Constant/Services/grcData";
+import {
+  Shield,
+  Building,
+  Smartphone,
+  Mail,
+  FileText,
+  AlertTriangle,
+  Users,
+} from "lucide-react";
+import bankingSectorData from "../../Constant/Services/bankingSectorData";
 
 // Animation components
 const AnimatedSection = ({ children, className = "" }) => {
@@ -24,7 +32,7 @@ const AnimatedSection = ({ children, className = "" }) => {
   );
 };
 
-const GRCPage = () => {
+const BankingSectorPage = () => {
   return (
     <div className="min-h-screen pt-30 bg-white">
       {/* Hero Section */}
@@ -41,15 +49,15 @@ const GRCPage = () => {
               animate={{ opacity: 1, y: 0 }}
               className="text-4xl lg:text-6xl font-bold mb-4"
             >
-              {grcData.hero.title}
+              {bankingSectorData.hero.title}
             </motion.h1>
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="text-2xl lg:text-3xl font-bold mb-6 text-[#FB7E06]"
+              className="text-2xl lg:text-3xl font-bold mb-6 bg-white/20 backdrop-blur-sm inline-block px-6 py-3 rounded-full"
             >
-              {grcData.hero.subtitle}
+              {bankingSectorData.hero.subtitle}
             </motion.div>
             <motion.p
               initial={{ opacity: 0 }}
@@ -57,7 +65,7 @@ const GRCPage = () => {
               transition={{ delay: 0.5 }}
               className="text-xl lg:text-2xl text-gray-100 max-w-3xl mx-auto leading-relaxed"
             >
-              {grcData.hero.description}
+              {bankingSectorData.hero.description}
             </motion.p>
           </div>
         </div>
@@ -69,20 +77,20 @@ const GRCPage = () => {
           <AnimatedSection className="max-w-6xl mx-auto">
             <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
               <h2 className="text-3xl lg:text-4xl font-bold text-[#184E43] mb-6 text-center">
-                {grcData.overview.title}
+                {bankingSectorData.overview.title}
               </h2>
               <p className="text-lg text-gray-700 mb-8 text-center leading-relaxed">
-                {grcData.overview.description}
+                {bankingSectorData.overview.description}
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 <div className="text-center p-6 bg-blue-50 rounded-xl border border-blue-200">
-                  <BookOpen className="w-12 h-12 text-[#2359B0] mx-auto mb-3" />
+                  <Clock className="w-12 h-12 text-[#2359B0] mx-auto mb-3" />
                   <h3 className="text-lg font-bold text-gray-800 mb-2">
                     Duration
                   </h3>
                   <p className="text-[#2359B0] font-semibold">
-                    {grcData.overview.duration}
+                    {bankingSectorData.overview.duration}
                   </p>
                 </div>
                 <div className="text-center p-6 bg-green-50 rounded-xl border border-green-200">
@@ -91,7 +99,7 @@ const GRCPage = () => {
                     Level
                   </h3>
                   <p className="text-[#184E43] font-semibold">
-                    {grcData.overview.level}
+                    {bankingSectorData.overview.level}
                   </p>
                 </div>
                 <div className="text-center p-6 bg-orange-50 rounded-xl border border-orange-200">
@@ -100,7 +108,7 @@ const GRCPage = () => {
                     Audience
                   </h3>
                   <p className="text-[#FB7E06] font-semibold text-sm">
-                    {grcData.overview.audience}
+                    {bankingSectorData.overview.audience}
                   </p>
                 </div>
               </div>
@@ -109,33 +117,114 @@ const GRCPage = () => {
         </div>
       </section>
 
-      {/* Target Audience */}
+      {/* Industry Challenges */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#184E43] mb-6">
-              {grcData.targetAudience.title}
+              {bankingSectorData.industryChallenges.title}
             </h2>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {grcData.targetAudience.groups.map((group, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {bankingSectorData.industryChallenges.challenges.map(
+              (challenge, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all"
+                >
+                  <h3 className="text-xl font-bold text-[#2359B0] mb-3">
+                    {challenge.challenge}
+                  </h3>
+                  <div className="mb-4">
+                    <div className="text-sm font-semibold text-gray-600 mb-1">
+                      Impact:
+                    </div>
+                    <div className="text-gray-700">{challenge.impact}</div>
+                  </div>
+                  <div>
+                    <div className="text-sm font-semibold text-gray-600 mb-1">
+                      Solution:
+                    </div>
+                    <div className="text-[#184E43] font-medium">
+                      {challenge.solution}
+                    </div>
+                  </div>
+                </motion.div>
+              )
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* Target Roles */}
+      <section className="py-16 bg-gradient-to-r from-[#2359B0] to-[#184E43] text-white">
+        <div className="container mx-auto px-4">
+          <AnimatedSection className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+              {bankingSectorData.targetRoles.title}
+            </h2>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {bankingSectorData.targetRoles.roles.map((department, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all"
+                className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20"
               >
-                <div className="flex items-center mb-4">
-                  <div className="w-3 h-3 bg-[#2359B0] rounded-full mr-3"></div>
-                  <h3 className="text-lg font-bold text-gray-800">
-                    {group.role}
-                  </h3>
-                </div>
-                <p className="text-gray-600 text-sm">{group.description}</p>
+                <h3 className="text-lg font-bold mb-4 text-center">
+                  {department.department}
+                </h3>
+                <ul className="space-y-2">
+                  {department.roles.map((role, roleIndex) => (
+                    <li
+                      key={roleIndex}
+                      className="flex items-center text-white/80 text-sm"
+                    >
+                      <div className="w-1.5 h-1.5 bg-[#FB7E06] rounded-full mr-3 flex-shrink-0"></div>
+                      {role}
+                    </li>
+                  ))}
+                </ul>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Regulatory Focus */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <AnimatedSection className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-[#184E43] mb-6">
+              {bankingSectorData.regulatoryFocus.title}
+            </h2>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            {bankingSectorData.regulatoryFocus.regulations.map(
+              (regulation, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  className="bg-gray-50 p-6 rounded-xl border border-gray-200 text-center hover:shadow-lg transition-all"
+                >
+                  <FileText className="w-12 h-12 text-[#2359B0] mx-auto mb-4" />
+                  <h3 className="text-lg font-bold text-gray-800 mb-2">
+                    {regulation.regulation}
+                  </h3>
+                  <p className="text-gray-600 text-sm">{regulation.focus}</p>
+                </motion.div>
+              )
+            )}
           </div>
         </div>
       </section>
@@ -145,12 +234,12 @@ const GRCPage = () => {
         <div className="container mx-auto px-4">
           <AnimatedSection className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#184E43] mb-6">
-              {grcData.curriculum.title}
+              {bankingSectorData.curriculum.title}
             </h2>
           </AnimatedSection>
 
           <div className="max-w-6xl mx-auto space-y-8">
-            {grcData.curriculum.modules.map((module, index) => (
+            {bankingSectorData.curriculum.modules.map((module, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
@@ -173,7 +262,7 @@ const GRCPage = () => {
                       <h3 className="text-2xl font-bold text-[#2359B0] mb-2">
                         {module.title}
                       </h3>
-                      <div className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold inline-block">
+                      <div className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold inline-block mb-3">
                         {module.duration}
                       </div>
                     </div>
@@ -201,16 +290,16 @@ const GRCPage = () => {
                         <div>
                           <h4 className="text-lg font-bold text-gray-800 mb-3 flex items-center">
                             <div className="w-2 h-2 bg-[#70B486] rounded-full mr-2"></div>
-                            Learning Objectives
+                            Banking Case Studies
                           </h4>
                           <ul className="space-y-2">
-                            {module.objectives.map((objective, objIndex) => (
+                            {module.caseStudies.map((caseStudy, caseIndex) => (
                               <li
-                                key={objIndex}
+                                key={caseIndex}
                                 className="flex items-start text-gray-700 text-sm"
                               >
                                 <div className="w-1.5 h-1.5 bg-[#70B486] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                <span>{objective}</span>
+                                <span>{caseStudy}</span>
                               </li>
                             ))}
                           </ul>
@@ -225,63 +314,68 @@ const GRCPage = () => {
         </div>
       </section>
 
-      {/* Learning Outcomes */}
+      {/* Technical Skills */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <AnimatedSection className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-[#184E43] to-[#2359B0] rounded-2xl p-8 text-white">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center">
-                {grcData.learningOutcomes.title}
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {grcData.learningOutcomes.outcomes.map((outcome, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                    className="flex items-start bg-white/10 backdrop-blur-sm p-4 rounded-lg"
-                  >
-                    <div className="w-2 h-2 bg-[#FB7E06] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-white/90">{outcome}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      {/* Certifications */}
-      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#184E43] mb-6">
-              {grcData.certifications.title}
+              {bankingSectorData.technicalSkills.title}
             </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              This training prepares you for globally recognized GRC
-              certifications
-            </p>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {grcData.certifications.items.map((cert, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            {bankingSectorData.technicalSkills.skills.map(
+              (skillCategory, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all"
+                >
+                  <h3 className="text-xl font-bold text-[#2359B0] mb-4 text-center">
+                    {skillCategory.category}
+                  </h3>
+                  <ul className="space-y-2">
+                    {skillCategory.items.map((skill, skillIndex) => (
+                      <li
+                        key={skillIndex}
+                        className="flex items-center text-gray-700 text-sm"
+                      >
+                        <div className="w-1.5 h-1.5 bg-[#FB7E06] rounded-full mr-3 flex-shrink-0"></div>
+                        {skill}
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              )
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* Business Impact */}
+      <section className="py-16 bg-gradient-to-r from-[#70B486] to-[#184E43] text-white">
+        <div className="container mx-auto px-4">
+          <AnimatedSection className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+              {bankingSectorData.businessImpact.title}
+            </h2>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {bankingSectorData.businessImpact.benefits.map((benefit, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 text-center hover:shadow-xl transition-all"
+                className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20"
               >
-                <Award className="w-12 h-12 text-[#2359B0] mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-gray-800 mb-2">
-                  {cert.name}
+                <h3 className="text-xl font-bold mb-3 text-[#FB7E06]">
+                  {benefit.benefit}
                 </h3>
-                <p className="text-[#184E43] font-semibold mb-2">
-                  {cert.organization}
-                </p>
-                <p className="text-gray-600 text-sm">{cert.focus}</p>
+                <p className="text-white/80">{benefit.impact}</p>
               </motion.div>
             ))}
           </div>
@@ -293,10 +387,10 @@ const GRCPage = () => {
         <div className="container mx-auto px-4 text-center">
           <AnimatedSection>
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              {grcData.cta.title}
+              {bankingSectorData.cta.title}
             </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-              {grcData.cta.description}
+              {bankingSectorData.cta.description}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.button
@@ -304,16 +398,16 @@ const GRCPage = () => {
                 whileTap={{ scale: 0.95 }}
                 className="bg-[#FB7E06] hover:bg-[#e57306] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center gap-3"
               >
-                <BookOpen size={20} />
-                {grcData.cta.button}
+                <Shield size={20} />
+                {bankingSectorData.cta.button}
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="border-2 border-white text-white hover:bg-white hover:text-[#184E43] px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center gap-3"
               >
-                <Download size={20} />
-                {grcData.cta.secondary}
+                <Users size={20} />
+                {bankingSectorData.cta.secondary}
               </motion.button>
             </div>
           </AnimatedSection>
@@ -323,4 +417,34 @@ const GRCPage = () => {
   );
 };
 
-export default GRCPage;
+// Add missing icon components
+const Clock = ({ size = 24, className = "" }) => (
+  <svg
+    className={className}
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+  >
+    <circle cx="12" cy="12" r="10"></circle>
+    <polyline points="12 6 12 12 16 14"></polyline>
+  </svg>
+);
+
+const Target = ({ size = 24, className = "" }) => (
+  <svg
+    className={className}
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+  >
+    <circle cx="12" cy="12" r="10"></circle>
+    <circle cx="12" cy="12" r="6"></circle>
+    <circle cx="12" cy="12" r="2"></circle>
+  </svg>
+);
+
+export default BankingSectorPage;

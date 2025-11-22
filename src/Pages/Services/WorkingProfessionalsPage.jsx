@@ -315,7 +315,7 @@ const WorkingProfessionalsPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#184E43] to-[#2359B0] text-white">
+      {/* <section className="py-20 bg-gradient-to-r from-[#184E43] to-[#2359B0] text-white">
         <div className="container mx-auto px-4 text-center">
           <AnimatedSection>
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
@@ -333,7 +333,7 @@ const WorkingProfessionalsPage = () => {
             </motion.button>
           </AnimatedSection>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
