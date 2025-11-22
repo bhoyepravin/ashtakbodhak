@@ -20,7 +20,7 @@ const fmcgSectorData = {
       {
         number: "01",
         title: "Cybersecurity in FMCG: The Big Picture",
-        icon: "🏭",
+
         duration: "5 Hours",
         topics: [
           "Why FMCG is a growing target for cybercrime",
@@ -36,7 +36,7 @@ const fmcgSectorData = {
       {
         number: "02",
         title: "Securing Supply Chain & Manufacturing Systems",
-        icon: "📦",
+
         duration: "7 Hours",
         topics: [
           "Risks in ERP, SCADA, and IoT-enabled production lines",
@@ -52,7 +52,7 @@ const fmcgSectorData = {
       {
         number: "03",
         title: "Retail & POS Security",
-        icon: "🏪",
+
         duration: "6 Hours",
         topics: [
           "Securing PoS systems and payment gateways",
@@ -68,7 +68,7 @@ const fmcgSectorData = {
       {
         number: "04",
         title: "Consumer Data & Marketing Platforms",
-        icon: "📊",
+
         duration: "5 Hours",
         topics: [
           "Protecting CRM and loyalty program data",
@@ -84,7 +84,7 @@ const fmcgSectorData = {
       {
         number: "05",
         title: "Employee Awareness & Insider Risk",
-        icon: "👥",
+
         duration: "6 Hours",
         topics: [
           "Phishing, social engineering, and credential theft",
@@ -100,7 +100,7 @@ const fmcgSectorData = {
       {
         number: "06",
         title: "Incident Response & Business Continuity",
-        icon: "🚨",
+
         duration: "6 Hours",
         topics: [
           "What to do during a breach or ransomware attack",

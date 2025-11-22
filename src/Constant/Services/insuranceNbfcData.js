@@ -20,7 +20,7 @@ const insuranceNbfcData = {
       {
         number: "01",
         title: "Cyber Threat Landscape in BFSI",
-        icon: "🎯",
+
         duration: "6 Hours",
         topics: [
           "Why NBFCs and insurers are prime targets",
@@ -36,7 +36,7 @@ const insuranceNbfcData = {
       {
         number: "02",
         title: "Securing Core Systems & Digital Channels",
-        icon: "🏦",
+
         duration: "7 Hours",
         topics: [
           "Risks in loan origination, policy management, CRM, and mobile apps",
@@ -52,7 +52,7 @@ const insuranceNbfcData = {
       {
         number: "03",
         title: "Customer Data Protection & Privacy",
-        icon: "🔒",
+
         duration: "6 Hours",
         topics: [
           "Handling Aadhaar, PAN, KYC, and health data securely",
@@ -68,7 +68,7 @@ const insuranceNbfcData = {
       {
         number: "04",
         title: "Email, Messaging & Social Engineering",
-        icon: "📧",
+
         duration: "5 Hours",
         topics: [
           "Spotting phishing, vishing, and smishing attacks",
@@ -84,7 +84,7 @@ const insuranceNbfcData = {
       {
         number: "05",
         title: "Cyber Hygiene for Staff & Field Agents",
-        icon: "👥",
+
         duration: "4 Hours",
         topics: [
           "Password policies, device security, and secure remote access",
@@ -100,7 +100,7 @@ const insuranceNbfcData = {
       {
         number: "06",
         title: "Fraud Prevention & Claims Integrity",
-        icon: "🕵️",
+
         duration: "6 Hours",
         topics: [
           "Detecting fraudulent claims and loan applications",
@@ -116,7 +116,7 @@ const insuranceNbfcData = {
       {
         number: "07",
         title: "Incident Response & Regulatory Compliance",
-        icon: "🚨",
+
         duration: "6 Hours",
         topics: [
           "What to do during a breach or fraud attempt",

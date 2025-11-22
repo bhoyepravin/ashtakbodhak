@@ -9,25 +9,21 @@ const seniorCitizensData = {
     title: "Courses Focusing On",
     features: [
       {
-        icon: "🔧",
         title: "Simplified Security Tools",
         description:
           "Use of password managers and pre-configured privacy settings on mobile and laptops.",
       },
       {
-        icon: "🚨",
         title: "Scam Awareness",
         description:
           "Education on frauds like tech support scams, impersonation, and Medicare etc.",
       },
       {
-        icon: "👥",
         title: "Trusted Contacts",
         description:
           "Setting up emergency digital contacts in their handheld devices for reporting suspicious activity.",
       },
       {
-        icon: "🌐",
         title: "Safe Browsing Habits",
         description:
           "Awareness on unknown links or downloading unsolicited attachments from WhatsApp, Emails or SMS.",
@@ -49,7 +45,7 @@ const seniorCitizensData = {
       {
         number: "01",
         title: "Introduction to Cybersecurity",
-        icon: "🛡️",
+
         topics: [
           "What is cybersecurity and why it matters",
           "Real-life examples of cyber frauds",
@@ -59,7 +55,7 @@ const seniorCitizensData = {
       {
         number: "02",
         title: "Understanding Common Threats",
-        icon: "🎣",
+
         topics: [
           "Phishing emails and scam calls",
           "Fake websites and fraudulent messages",
@@ -70,7 +66,7 @@ const seniorCitizensData = {
       {
         number: "03",
         title: "Safe Use of Devices",
-        icon: "📱",
+
         topics: [
           "Strong passwords and password managers",
           "Updating software and antivirus tools",
@@ -80,7 +76,7 @@ const seniorCitizensData = {
       {
         number: "04",
         title: "Secure Digital Payments",
-        icon: "💳",
+
         topics: [
           "Using UPI, net banking, and mobile wallets",
           "QR code safety and payment app hygiene",
@@ -90,7 +86,7 @@ const seniorCitizensData = {
       {
         number: "05",
         title: "Social Media & Messaging Safety",
-        icon: "💬",
+
         topics: [
           "Privacy settings on WhatsApp, Facebook, etc.",
           "Avoiding oversharing personal information",
@@ -100,7 +96,7 @@ const seniorCitizensData = {
       {
         number: "06",
         title: "Emergency Response",
-        icon: "🚑",
+
         topics: [
           "What to do if scammed or hacked",
           "How to report cybercrime (cybercrime.gov.in, helplines)",
@@ -113,25 +109,21 @@ const seniorCitizensData = {
     title: "Special Features for Senior Citizens",
     items: [
       {
-        icon: "⏱️",
         title: "Patient Learning Pace",
         description:
           "Slower, more detailed explanations with plenty of practice time",
       },
       {
-        icon: "🔊",
         title: "Clear Communication",
         description:
           "Large fonts, clear audio, and simple language without technical jargon",
       },
       {
-        icon: "👨‍👩‍👧‍👦",
         title: "Family Involvement",
         description:
           "Encouraging family members to participate and support learning",
       },
       {
-        icon: "🔄",
         title: "Repetition & Practice",
         description:
           "Regular revision sessions and hands-on practice exercises",

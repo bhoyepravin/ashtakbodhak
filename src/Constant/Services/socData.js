@@ -20,7 +20,7 @@ const socData = {
       {
         number: "01",
         title: "Cybersecurity Fundamentals",
-        icon: "🛡️",
+
         duration: "6 Hours",
         topics: [
           "Threat landscape: malware, phishing, ransomware, insider threats",
@@ -36,7 +36,7 @@ const socData = {
       {
         number: "02",
         title: "Introduction to SOC",
-        icon: "🏢",
+
         duration: "5 Hours",
         topics: [
           "What is a Security Operations Center?",
@@ -52,7 +52,7 @@ const socData = {
       {
         number: "03",
         title: "Threat Detection & Monitoring",
-        icon: "🔍",
+
         duration: "8 Hours",
         topics: [
           "Log sources: firewalls, endpoints, servers, cloud",
@@ -68,7 +68,7 @@ const socData = {
       {
         number: "04",
         title: "Incident Response Lifecycle",
-        icon: "🚨",
+
         duration: "7 Hours",
         topics: [
           "Phases: identification, containment, eradication, recovery, post-incident review",
@@ -84,7 +84,7 @@ const socData = {
       {
         number: "05",
         title: "SOC Metrics & Reporting",
-        icon: "📊",
+
         duration: "4 Hours",
         topics: [
           "KPIs: MTTR, MTTD, alert volume, incident severity",
@@ -100,7 +100,7 @@ const socData = {
       {
         number: "06",
         title: "Threat Intelligence & Hunting",
-        icon: "🎯",
+
         duration: "6 Hours",
         topics: [
           "IOC, TTPs, and MITRE ATT&CK framework",
@@ -116,7 +116,7 @@ const socData = {
       {
         number: "07",
         title: "Compliance & Governance",
-        icon: "📋",
+
         duration: "5 Hours",
         topics: [
           "ISO 27001, NIST CSF, DPDP Act, RBI/IRDAI mandates",
@@ -132,7 +132,7 @@ const socData = {
       {
         number: "08",
         title: "Building a Cyber-Aware Culture",
-        icon: "👥",
+
         duration: "4 Hours",
         topics: [
           "Role-based awareness for SOC, IT, and business teams",

@@ -34,7 +34,6 @@ const homeData = {
     title: "Current Information & Cyber Security Landscape",
     sections: [
       {
-        icon: "🚀",
         title: "Digital Acceleration",
         description:
           "With Digital India initiatives, UPI transactions, and widespread internet adoption, our digital footprint has expanded exponentially, creating new attack surfaces.",
@@ -45,7 +44,6 @@ const homeData = {
         ],
       },
       {
-        icon: "🛡️",
         title: "Evolving Threat Landscape",
         description:
           "Cyber threats have become more sophisticated, targeted, and organized, requiring specialized knowledge and continuous vigilance.",
@@ -56,7 +54,6 @@ const homeData = {
         ],
       },
       {
-        icon: "🌐",
         title: "Skill Gap Crisis",
         description:
           "There's a significant shortage of skilled cybersecurity professionals in India, leaving organizations vulnerable and under-protected.",

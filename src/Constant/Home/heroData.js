@@ -15,7 +15,6 @@ const heroData = {
         { value: "25%", label: "Senior Citizens" },
       ],
       backgroundColor: "from-[#1F5453] to-[#2D716F]",
-      icon: "🛡️",
     },
     {
       id: 2,
@@ -31,7 +30,6 @@ const heroData = {
         { value: "VAPT", label: "Vulnerability Assessment" },
       ],
       backgroundColor: "from-[#1F5453] to-[#1F5453]",
-      icon: "💻",
     },
     {
       id: 3,
@@ -47,7 +45,6 @@ const heroData = {
         { value: "Manufacturing", label: "OT Security" },
       ],
       backgroundColor: "from-[#2D716F] to-[#1F5453]",
-      icon: "🏢",
     },
     {
       id: 4,
@@ -63,7 +60,6 @@ const heroData = {
         { value: "Community", label: "Digital Safety" },
       ],
       backgroundColor: "from-[#1F5453] to-[#2D716F]",
-      icon: "🌐",
     },
   ],
 };

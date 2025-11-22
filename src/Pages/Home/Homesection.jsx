@@ -26,7 +26,7 @@ const AnimatedSection = ({ children, className = "" }) => {
 
 const Homesection = () => {
   return (
-    <div className="min-h-screen pt-20 bg-white">
+    <div className="min-h-screen pt-2 bg-white">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#184E43] via-[#2359B0] to-[#1F5453] overflow-hidden">
         {/* Background Elements */}

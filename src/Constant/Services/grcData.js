@@ -20,7 +20,7 @@ const grcData = {
       {
         number: "01",
         title: "Cybersecurity Fundamentals",
-        icon: "🔐",
+
         duration: "5 Hours",
         topics: [
           "Threat landscape: external attacks, insider risks, supply chain vulnerabilities",
@@ -36,7 +36,7 @@ const grcData = {
       {
         number: "02",
         title: "Introduction to GRC",
-        icon: "🏛️",
+
         duration: "4 Hours",
         topics: [
           "What is Governance, Risk, and Compliance?",
@@ -52,7 +52,7 @@ const grcData = {
       {
         number: "03",
         title: "Risk Management Frameworks",
-        icon: "📊",
+
         duration: "6 Hours",
         topics: [
           "Identifying, assessing, and mitigating cyber risks",
@@ -68,7 +68,7 @@ const grcData = {
       {
         number: "04",
         title: "Governance & Policy Alignment",
-        icon: "⚖️",
+
         duration: "5 Hours",
         topics: [
           "Role of leadership and board oversight",
@@ -84,7 +84,7 @@ const grcData = {
       {
         number: "05",
         title: "Compliance Landscape",
-        icon: "📋",
+
         duration: "8 Hours",
         topics: [
           "Overview of ISO 27001, NIST CSF, PCI-DSS, GDPR, HIPAA, DPDP Act",
@@ -100,7 +100,7 @@ const grcData = {
       {
         number: "06",
         title: "Incident Response & Business Continuity",
-        icon: "🚨",
+
         duration: "6 Hours",
         topics: [
           "Building an IR plan: detection, containment, recovery",
@@ -116,7 +116,7 @@ const grcData = {
       {
         number: "07",
         title: "Third-Party Risk & Vendor Governance",
-        icon: "🤝",
+
         duration: "4 Hours",
         topics: [
           "Risks of outsourced IT, cloud providers, and vendors",
@@ -132,7 +132,7 @@ const grcData = {
       {
         number: "08",
         title: "Cyber Hygiene & Culture Building",
-        icon: "👥",
+
         duration: "4 Hours",
         topics: [
           "Role-based awareness for employees, managers, and executives",

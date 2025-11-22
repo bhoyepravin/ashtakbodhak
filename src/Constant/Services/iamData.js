@@ -20,7 +20,7 @@ const iamData = {
       {
         number: "01",
         title: "Cybersecurity Fundamentals",
-        icon: "🛡️",
+
         duration: "4 Hours",
         topics: [
           "Threat landscape: phishing, ransomware, insider threats",
@@ -36,7 +36,7 @@ const iamData = {
       {
         number: "02",
         title: "Introduction to IAM",
-        icon: "👤",
+
         duration: "5 Hours",
         topics: [
           "What is Identity & Access Management?",
@@ -52,7 +52,7 @@ const iamData = {
       {
         number: "03",
         title: "Authentication & Authorization",
-        icon: "🔑",
+
         duration: "7 Hours",
         topics: [
           "Password hygiene and multi-factor authentication (MFA)",
@@ -68,7 +68,7 @@ const iamData = {
       {
         number: "04",
         title: "Privileged Access Management",
-        icon: "👑",
+
         duration: "8 Hours",
         topics: [
           "Risks of privileged accounts and admin access",
@@ -84,7 +84,7 @@ const iamData = {
       {
         number: "05",
         title: "Identity Lifecycle & Governance",
-        icon: "🔄",
+
         duration: "6 Hours",
         topics: [
           "Onboarding, provisioning, de-provisioning",
@@ -100,7 +100,7 @@ const iamData = {
       {
         number: "06",
         title: "IAM in Cloud & Hybrid Environments",
-        icon: "☁️",
+
         duration: "7 Hours",
         topics: [
           "IAM for Azure AD, AWS IAM, Google Workspace",
@@ -116,7 +116,7 @@ const iamData = {
       {
         number: "07",
         title: "Incident Response & IAM Failures",
-        icon: "🚨",
+
         duration: "5 Hours",
         topics: [
           "What happens when IAM is misconfigured or bypassed",
@@ -132,7 +132,7 @@ const iamData = {
       {
         number: "08",
         title: "Compliance & Regulatory Alignment",
-        icon: "📋",
+
         duration: "3 Hours",
         topics: [
           "ISO 27001, NIST, GDPR, DPDP Act, RBI/IRDAI mandates",

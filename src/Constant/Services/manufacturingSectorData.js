@@ -20,7 +20,7 @@ const manufacturingSectorData = {
       {
         number: "01",
         title: "Cyber Threat Landscape in Manufacturing",
-        icon: "🎯",
+
         duration: "6 Hours",
         topics: [
           "Why manufacturing is a growing target (ransomware, IP theft, sabotage)",
@@ -36,7 +36,7 @@ const manufacturingSectorData = {
       {
         number: "02",
         title: "Securing Operational Technology (OT)",
-        icon: "🏭",
+
         duration: "8 Hours",
         topics: [
           "Risks in SCADA, PLCs, and IoT-enabled machinery",
@@ -52,7 +52,7 @@ const manufacturingSectorData = {
       {
         number: "03",
         title: "Protecting Enterprise Systems",
-        icon: "💻",
+
         duration: "6 Hours",
         topics: [
           "ERP, MES, and inventory systems – threat vectors and hygiene",
@@ -68,7 +68,7 @@ const manufacturingSectorData = {
       {
         number: "04",
         title: "Supply Chain & Vendor Security",
-        icon: "📦",
+
         duration: "5 Hours",
         topics: [
           "Risks from suppliers, logistics partners, and outsourced IT",
@@ -84,7 +84,7 @@ const manufacturingSectorData = {
       {
         number: "05",
         title: "Email, Messaging & Insider Threats",
-        icon: "📧",
+
         duration: "4 Hours",
         topics: [
           "Spotting phishing, spoofing, and social engineering",
@@ -100,7 +100,7 @@ const manufacturingSectorData = {
       {
         number: "06",
         title: "Incident Response & Business Continuity",
-        icon: "🚨",
+
         duration: "6 Hours",
         topics: [
           "What to do during a breach or ransomware attack",
@@ -116,7 +116,7 @@ const manufacturingSectorData = {
       {
         number: "07",
         title: "Cyber Hygiene for Plant & Office Staff",
-        icon: "👥",
+
         duration: "5 Hours",
         topics: [
           "Password policies, device security, and secure remote access",
@@ -132,7 +132,7 @@ const manufacturingSectorData = {
       {
         number: "08",
         title: "Building Effective Cybersecurity Program",
-        icon: "🛡️",
+
         duration: "5 Hours",
         topics: [
           "Perform a cybersecurity maturity assessment",

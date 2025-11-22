@@ -7,21 +7,18 @@ const contactData = {
   },
   contactMethods: [
     {
-      icon: "📱",
       title: "WhatsApp",
       description: "Quick responses for immediate queries",
       value: "+919876543210", // Replace with actual number
       type: "whatsapp",
     },
     {
-      icon: "📧",
       title: "Email",
       description: "Detailed inquiries and partnerships",
       value: "contact@ashtakbodhak.com",
       type: "email",
     },
     {
-      icon: "🏢",
       title: "Office",
       description: "Registered Office Address",
       value: "123 Cyber Park, Security Lane, Mumbai, Maharashtra - 400001",

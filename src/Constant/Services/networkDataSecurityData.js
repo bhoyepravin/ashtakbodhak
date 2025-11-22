@@ -20,7 +20,7 @@ const networkDataSecurityData = {
       {
         number: "01",
         title: "Cybersecurity Fundamentals",
-        icon: "🛡️",
+
         duration: "5 Hours",
         topics: [
           "Threat landscape: malware, phishing, ransomware, insider threats",
@@ -36,7 +36,7 @@ const networkDataSecurityData = {
       {
         number: "02",
         title: "Network Security Essentials",
-        icon: "🌐",
+
         duration: "8 Hours",
         topics: [
           "Network architecture: LAN, WAN, VPN, DMZ",
@@ -52,7 +52,7 @@ const networkDataSecurityData = {
       {
         number: "03",
         title: "Data Security Across the Lifecycle",
-        icon: "💾",
+
         duration: "6 Hours",
         topics: [
           "Data classification and handling (PII, PHI, IP)",
@@ -68,7 +68,7 @@ const networkDataSecurityData = {
       {
         number: "04",
         title: "Access Control & Identity Management",
-        icon: "🔑",
+
         duration: "6 Hours",
         topics: [
           "Role-based access control (RBAC) and least privilege",
@@ -84,7 +84,7 @@ const networkDataSecurityData = {
       {
         number: "05",
         title: "Cloud & Remote Work Security",
-        icon: "☁️",
+
         duration: "7 Hours",
         topics: [
           "Securing cloud platforms (SaaS, IaaS, PaaS)",
@@ -100,7 +100,7 @@ const networkDataSecurityData = {
       {
         number: "06",
         title: "Incident Response & Threat Detection",
-        icon: "🚨",
+
         duration: "5 Hours",
         topics: [
           "Building an IR playbook: detection, containment, recovery",
@@ -116,7 +116,7 @@ const networkDataSecurityData = {
       {
         number: "07",
         title: "Compliance & Governance",
-        icon: "📋",
+
         duration: "4 Hours",
         topics: [
           "Overview of ISO 27001, NIST, GDPR, DPDP Act",
@@ -132,7 +132,7 @@ const networkDataSecurityData = {
       {
         number: "08",
         title: "Cyber Hygiene & Culture Building",
-        icon: "👥",
+
         duration: "4 Hours",
         topics: [
           "Daily practices: patching, updates, secure browsing",

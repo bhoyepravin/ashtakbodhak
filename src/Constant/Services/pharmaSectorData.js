@@ -20,7 +20,7 @@ const pharmaSectorData = {
       {
         number: "01",
         title: "Cyber Threat Landscape in Pharma",
-        icon: "🎯",
+
         duration: "6 Hours",
         topics: [
           "Why pharma is a prime target: IP theft, ransomware, espionage",
@@ -36,7 +36,7 @@ const pharmaSectorData = {
       {
         number: "02",
         title: "Protecting R&D and Clinical Data",
-        icon: "🔬",
+
         duration: "8 Hours",
         topics: [
           "Securing lab systems, research databases, and trial platforms",
@@ -52,7 +52,7 @@ const pharmaSectorData = {
       {
         number: "03",
         title: "Manufacturing & Supply Chain Security",
-        icon: "🏭",
+
         duration: "7 Hours",
         topics: [
           "Risks in SCADA, PLCs, and IoT-enabled production lines",
@@ -68,7 +68,7 @@ const pharmaSectorData = {
       {
         number: "04",
         title: "Regulatory Compliance & Data Privacy",
-        icon: "📋",
+
         duration: "6 Hours",
         topics: [
           "Overview of HIPAA, GDPR, DPDP Act, and CDSCO guidelines",
@@ -84,7 +84,7 @@ const pharmaSectorData = {
       {
         number: "05",
         title: "Email, Messaging & Insider Threats",
-        icon: "📧",
+
         duration: "5 Hours",
         topics: [
           "Spotting phishing, spoofing, and social engineering",
@@ -100,7 +100,7 @@ const pharmaSectorData = {
       {
         number: "06",
         title: "Cyber Hygiene for Field & Office Staff",
-        icon: "👥",
+
         duration: "5 Hours",
         topics: [
           "Password policies, device security, and secure remote access",
@@ -116,7 +116,7 @@ const pharmaSectorData = {
       {
         number: "07",
         title: "Incident Response & Business Continuity",
-        icon: "🚨",
+
         duration: "5 Hours",
         topics: [
           "What to do during a breach or ransomware attack",

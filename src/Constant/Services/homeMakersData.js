@@ -9,25 +9,21 @@ const homeMakersData = {
     title: "Courses Focusing On",
     features: [
       {
-        icon: "🔐",
         title: "Multi-Factor Authentication",
         description:
           "Usage of multi-factor authentication on banking and shopping apps.",
       },
       {
-        icon: "🛡️",
         title: "Security Software",
         description:
           "Installation of family-friendly antivirus and other basic security software.",
       },
       {
-        icon: "📧",
         title: "Message Verification",
         description:
           "How to avoid clicking on urgent messages by first verifying the sender directly.",
       },
       {
-        icon: "🔄",
         title: "Software Updates",
         description:
           "Keeping all software updated on all devices, especially the shared ones.",
@@ -49,7 +45,7 @@ const homeMakersData = {
       {
         number: "01",
         title: "Cybersecurity in Daily Life",
-        icon: "🏠",
+
         topics: [
           "What is cybersecurity? Why it matters at home?",
           "Common threats faced by home makers online",
@@ -59,7 +55,7 @@ const homeMakersData = {
       {
         number: "02",
         title: "Safe Online Banking & Shopping",
-        icon: "💰",
+
         topics: [
           "Recognizing fake websites and payment scams",
           "Using UPI, net banking, and mobile wallets securely",
@@ -69,7 +65,7 @@ const homeMakersData = {
       {
         number: "03",
         title: "Social Media & Messaging Safety",
-        icon: "📱",
+
         topics: [
           "Privacy settings on WhatsApp, Facebook, Instagram",
           "Avoiding fake friend requests and impersonation",
@@ -79,7 +75,7 @@ const homeMakersData = {
       {
         number: "04",
         title: "Protecting Family Devices",
-        icon: "💻",
+
         topics: [
           "Setting strong passwords and enabling 2FA",
           "Updating antivirus and software regularly",
@@ -89,7 +85,7 @@ const homeMakersData = {
       {
         number: "05",
         title: "Online Etiquette & Responsibility",
-        icon: "🤝",
+
         topics: [
           "Respecting others online",
           "Avoiding gossip, forwarding fake news, or sharing sensitive content",
@@ -99,7 +95,7 @@ const homeMakersData = {
       {
         number: "06",
         title: "Emergency Response",
-        icon: "🚨",
+
         topics: [
           "What to do if scammed or hacked",
           "How to report cybercrime (cybercrime.gov.in, helplines)",
@@ -112,22 +108,18 @@ const homeMakersData = {
     title: "Why GrihaRaksha for Home Makers?",
     items: [
       {
-        icon: "👩‍👧‍👦",
         title: "Family Protection",
         description: "Learn to protect your entire family from online threats",
       },
       {
-        icon: "🛒",
         title: "Safe Online Shopping",
         description: "Shop confidently without fear of financial fraud",
       },
       {
-        icon: "💬",
         title: "Secure Communication",
         description: "Keep your personal conversations and data private",
       },
       {
-        icon: "📚",
         title: "Easy to Understand",
         description:
           "No technical background required - learn in simple language",

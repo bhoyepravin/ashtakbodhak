@@ -15,7 +15,7 @@ const targetAudienceData = {
         "Social media oversharing",
         "Gaming platform risks",
       ],
-      //icon: "🎮",
+
       color: "from-purple-500 to-blue-500",
       bgColor: "bg-gradient-to-br from-purple-50 to-blue-50",
       borderColor: "border-purple-200",
@@ -33,7 +33,7 @@ const targetAudienceData = {
         "Online shopping risks",
         "Social media usage",
       ],
-      // icon: "🏠",
+
       color: "from-green-500 to-teal-500",
       bgColor: "bg-gradient-to-br from-green-50 to-teal-50",
       borderColor: "border-green-200",
@@ -51,7 +51,7 @@ const targetAudienceData = {
         "Family device sharing",
         "Business email compromise",
       ],
-      //icon: "💼",
+
       color: "from-blue-500 to-cyan-500",
       bgColor: "bg-gradient-to-br from-blue-50 to-cyan-50",
       borderColor: "border-blue-200",
@@ -69,7 +69,7 @@ const targetAudienceData = {
         "Business data protection",
         "Client information security",
       ],
-      //icon: "🚀",
+
       color: "from-orange-500 to-red-500",
       bgColor: "bg-gradient-to-br from-orange-50 to-red-50",
       borderColor: "border-orange-200",
@@ -87,7 +87,7 @@ const targetAudienceData = {
         "Online banking risks",
         "Tech support scams",
       ],
-      //icon: "👴",
+
       color: "from-indigo-500 to-purple-500",
       bgColor: "bg-gradient-to-br from-indigo-50 to-purple-50",
       borderColor: "border-indigo-200",

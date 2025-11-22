@@ -5,17 +5,14 @@ const aboutData = {
       {
         content:
           "With a great urge to start something new and fresh, comes greater responsibility to make it more impactful. Having spent more than 22 years in Information and Cyber Security domain, I was desirous of spreading the word and sharing my knowledge gathered through the countless Days and Nights!",
-        icon: "🚀",
       },
       {
         content:
           "The desire was so profound that, I decided not to join as CISO but brainstorm on ideas to take the leap forward to follow my dream. After a careful thought to my career and post many fruitful discussions with industry veterans, peers from industry and also with education institutes, I arrived at the concept of AshtakBodhak. That's how AshtakBodhak was born.",
-        icon: "💡",
       },
       {
         content:
           "We, at AshtakBodhak, want to take multipronged approach involving activities like awareness trainings, hands-on workshops, education to the masses and consulting entrepreneurs and organizations to achieve greater heights in the Information and Cyber Security Domain.",
-        icon: "🎯",
       },
     ],
   },
@@ -26,19 +23,16 @@ const aboutData = {
         title: "Youth Empowerment",
         description:
           "Encourage today's young talent to look at Information and Cyber Security as a career option with loads of potential to gain knowledge, serve the society and earn respect & money.",
-        icon: "🎓",
       },
       {
         title: "Industry-Academia Bridge",
         description:
           "Building bridges between industry expectations and institutional readiness through immersive, job-ready trainings and workshops.",
-        icon: "🌉",
       },
       {
         title: "Strategic Resilience",
         description:
           "Advance cybersecurity awareness, education, and strategic cyber resilience across India's digital landscape from boardrooms to classrooms.",
-        icon: "🛡️",
       },
     ],
   },

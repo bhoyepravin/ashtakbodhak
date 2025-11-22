@@ -20,7 +20,7 @@ const bankingSectorData = {
       {
         number: "01",
         title: "Cyber Threat Landscape in Banking",
-        icon: "🎯",
+
         duration: "6 Hours",
         topics: [
           "Prime targets: financial, reputational, and regulatory stakes",
@@ -36,7 +36,7 @@ const bankingSectorData = {
       {
         number: "02",
         title: "Securing Core Banking Systems",
-        icon: "🏦",
+
         duration: "8 Hours",
         topics: [
           "Risks in CBS, ATM networks, mobile banking, and APIs",
@@ -52,7 +52,7 @@ const bankingSectorData = {
       {
         number: "03",
         title: "Customer-Facing Channels & Fraud Prevention",
-        icon: "📱",
+
         duration: "7 Hours",
         topics: [
           "UPI, net banking, mobile apps — threat vectors and hygiene",
@@ -68,7 +68,7 @@ const bankingSectorData = {
       {
         number: "04",
         title: "Email, Messaging & Social Engineering",
-        icon: "📧",
+
         duration: "5 Hours",
         topics: [
           "Spotting phishing, vishing, and smishing attacks",
@@ -84,7 +84,7 @@ const bankingSectorData = {
       {
         number: "05",
         title: "Data Privacy & Regulatory Compliance",
-        icon: "📋",
+
         duration: "6 Hours",
         topics: [
           "Overview of RBI guidelines, ISO 27001, PCI-DSS etc.",
@@ -100,7 +100,7 @@ const bankingSectorData = {
       {
         number: "06",
         title: "Incident Response & Crisis Management",
-        icon: "🚨",
+
         duration: "5 Hours",
         topics: [
           "What to do during a breach or fraud attempt",
@@ -116,7 +116,7 @@ const bankingSectorData = {
       {
         number: "07",
         title: "Cyber Hygiene for Bank Staff",
-        icon: "👥",
+
         duration: "3 Hours",
         topics: [
           "Password policies, device security, and secure remote access",

@@ -20,7 +20,7 @@ const appsecVaptData = {
       {
         number: "01",
         title: "Cybersecurity Fundamentals",
-        icon: "🛡️",
+
         duration: "5 Hours",
         topics: [
           "Threat landscape: malware, phishing, ransomware, insider threats",
@@ -36,7 +36,7 @@ const appsecVaptData = {
       {
         number: "02",
         title: "Application Security Basics",
-        icon: "🔐",
+
         duration: "8 Hours",
         topics: [
           "OWASP Top 10 vulnerabilities (e.g., XSS, SQLi, Broken Auth)",
@@ -52,7 +52,7 @@ const appsecVaptData = {
       {
         number: "03",
         title: "Secure SDLC",
-        icon: "🔄",
+
         duration: "7 Hours",
         topics: [
           "Security checkpoints in requirements, design, development, testing, deployment",
@@ -68,7 +68,7 @@ const appsecVaptData = {
       {
         number: "04",
         title: "Vulnerability Assessment & Penetration Testing",
-        icon: "🔍",
+
         duration: "12 Hours",
         topics: [
           "Difference between VA and PT",
@@ -84,7 +84,7 @@ const appsecVaptData = {
       {
         number: "05",
         title: "Risk Prioritization & Remediation",
-        icon: "📊",
+
         duration: "6 Hours",
         topics: [
           "CVSS scoring and risk classification",
@@ -100,7 +100,7 @@ const appsecVaptData = {
       {
         number: "06",
         title: "Compliance & Regulatory Alignment",
-        icon: "📋",
+
         duration: "5 Hours",
         topics: [
           "ISO 27001, PCI-DSS, DPDP Act, RBI / IRDAI mandates",
@@ -116,7 +116,7 @@ const appsecVaptData = {
       {
         number: "07",
         title: "Incident Response & Secure Deployment",
-        icon: "🚨",
+
         duration: "6 Hours",
         topics: [
           "What to do if a vulnerability is exploited",
@@ -132,7 +132,7 @@ const appsecVaptData = {
       {
         number: "08",
         title: "Cyber Hygiene & Culture Building",
-        icon: "👥",
+
         duration: "4 Hours",
         topics: [
           "Role-based awareness for developers, testers, and business teams",
