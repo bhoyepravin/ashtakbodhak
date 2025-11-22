@@ -7,7 +7,7 @@ import { logo } from "../../assets";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState(null);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Move state inside Navbar
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -31,42 +31,87 @@ const Navbar = () => {
           items: [
             {
               name: "Teen Agers & Young Adults",
-              path: "/teenagers-young-adults",
+              //path: "/teenagers-young-adults",
+              subitems: [{ name: "Gen Z Edition", path: "/gen-z-edition" }],
             },
-            { name: "Home Makers", path: "/home-makers" },
-            { name: "Working Professionals", path: "/working-professionals" },
-            { name: "Self Employed", path: "/self-employed" },
-            { name: "Senior Citizens", path: "/senior-citizens" },
+            {
+              name: "Home Makers",
+              path: "/home-makers",
+              subitems: [
+                {
+                  name: "Griha Raksha",
+                  path: "/griha-raksha",
+                },
+              ],
+            },
+            {
+              name: "Working Professionals & Self Employed Individuals",
+              //path: "/working-professionals",
+              subitems: [{ name: "Secure Mindset", path: "/secure-mindset" }],
+            },
+            {
+              name: "Senior Citizens",
+              path: "/secure-senior",
+              subitems: [
+                {
+                  name: "Secure Senior",
+                  path: "/secure-senior",
+                },
+              ],
+            },
           ],
         },
         {
           name: "Technical Training",
-          path: "/service-offerings/technical-training",
+          //path: "/service-offerings/technical-training",
           items: [
-            { name: "Governance Risk and Compliance", path: "/grc-training" },
-            { name: "Network & Data Security", path: "/network-data-security" },
-            { name: "Security Operations Centre", path: "/soc-training" },
-            { name: "Application Security & VAPT", path: "/appsec-vapt" },
-            { name: "Identity and Access Management", path: "/iam-training" },
+            {
+              name: "Governance Risk and Compliance",
+              path: "/governance-risk-and-compliance",
+            },
+            {
+              name: "Network & Data Security",
+              path: "/network-data-security",
+            },
+            {
+              name: "Security Operations Centre",
+              path: "/soc-training",
+            },
+            {
+              name: "Application Security & VAPT",
+              path: "/appsec-vapt",
+            },
+            {
+              name: "Identity and Access Management",
+              path: "/iam-training",
+            },
           ],
         },
         {
           name: "Sector Specific Training",
-          path: "/service-offerings/sector-training",
+          //path: "/service-offerings/sector-training",
           items: [
-            { name: "FMCG Sector", path: "/fmcg-sector" },
-            { name: "Banking Sector", path: "/banking-sector" },
-            { name: "Pharma Sector", path: "/pharma-sector" },
-            { name: "Manufacturing Sector", path: "/manufacturing-sector" },
-            { name: "Insurance and NBFC Sectors", path: "/insurance-nbfc" },
-          ],
-        },
-        {
-          name: "Service to Society",
-          path: "/service-offerings/society",
-          items: [
-            { name: "Aapke Sawal – Mere Jawab", path: "/faq" },
-            { name: "Cyber Thug Se Bachav", path: "/cyber-fraud-awareness" },
+            {
+              name: "FMCG Sector",
+              path: "/fmcg-sector",
+            },
+            {
+              name: "Banking Sector",
+              path: "/banking-sector",
+            },
+            {
+              name: "Manufacturing Sector",
+              path: "/manufacturing-sector",
+            },
+
+            {
+              name: "Insurance and NBFC Sectors",
+              path: "/insurance-nbfc",
+            },
+            {
+              name: "Pharma Sector",
+              path: "/pharma-sector",
+            },
           ],
         },
       ],
@@ -96,8 +141,8 @@ const Navbar = () => {
       <motion.nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "py-2 bg-[#1F5453] shadow-lg"
-            : "py-4 bg-[#1F5453]/95 backdrop-blur-sm"
+            ? "py-2 bg-[#2d8573] shadow-lg"
+            : "py-4 bg-[#2d8573]/95 backdrop-blur-sm"
         }`}
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
@@ -107,7 +152,7 @@ const Navbar = () => {
             className="flex items-center group"
             onClick={handleLinkClick}
           >
-            <div className="w-28 h-28 flex items-center justify-center overflow-hidden">
+            <div className="w-32 h-32 flex items-center justify-center overflow-hidden">
               <img
                 src={logo}
                 alt="AshtakBodhak Logo"
@@ -134,7 +179,7 @@ const Navbar = () => {
               >
                 <Link
                   to={item.path}
-                  className={`relative py-2 px-1 text-white transition-all duration-300 font-medium ${
+                  className={`relative py-4  px-1 text-white transition-all duration-300 font-bold ${
                     location.pathname === item.path
                       ? "text-[#F8810A]"
                       : "hover:text-[#F8810A]"
@@ -155,7 +200,7 @@ const Navbar = () => {
                 {/* Enhanced Mega Menu for Service Offerings */}
                 {item.submenu && activeSubmenu === index && (
                   <motion.div
-                    className="absolute left-1/2 transform -translate-x-1/2 mt-4 w-[800px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300"
+                    className="absolute left-1/2 transform -translate-x-1/2 mt-4 w-[900px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300"
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
@@ -163,7 +208,7 @@ const Navbar = () => {
                     <div className="bg-white rounded-xl shadow-2xl py-6 border border-gray-100">
                       <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white rotate-45 border-t border-l border-gray-100"></div>
 
-                      <div className="grid grid-cols-2 gap-8 px-6">
+                      <div className="grid grid-cols-3 gap-6 px-6">
                         {item.submenu.map((subItem) => (
                           <div key={subItem.name} className="space-y-3">
                             <Link
@@ -176,17 +221,40 @@ const Navbar = () => {
 
                             <div className="space-y-2">
                               {subItem.items.map((service, serviceIndex) => (
-                                <Link
+                                <div
                                   key={service.path}
-                                  to={service.path}
-                                  className="flex items-start space-x-2 group/service p-2 rounded-lg hover:bg-gray-50 transition-all duration-300"
-                                  onClick={handleLinkClick}
+                                  className="group/service"
                                 >
-                                  <div className="w-1.5 h-1.5 bg-[#F8810A] rounded-full mt-2 flex-shrink-0 group-hover/service:scale-125 transition-transform duration-300"></div>
-                                  <span className="text-gray-700 text-sm group-hover/service:text-[#1F5453] group-hover/service:font-medium transition-all duration-300">
-                                    {service.name}
-                                  </span>
-                                </Link>
+                                  <Link
+                                    to={service.path}
+                                    className="flex items-start space-x-2 p-2 rounded-lg hover:bg-gray-50 transition-all duration-300"
+                                    onClick={handleLinkClick}
+                                  >
+                                    <div className="w-1.5 h-1.5 bg-[#F8810A] rounded-full mt-2 flex-shrink-0 group-hover/service:scale-125 transition-transform duration-300"></div>
+                                    <span className="text-gray-700 text-sm group-hover/service:text-[#1F5453] group-hover/service:font-medium transition-all duration-300">
+                                      {service.name}
+                                    </span>
+                                  </Link>
+
+                                  {/* Third Level Submenu */}
+                                  {service.subitems && (
+                                    <div className="ml-4 mt-1 space-y-1 opacity-0 max-h-0 group-hover/service:opacity-100 group-hover/service:max-h-96 transition-all duration-300 overflow-hidden">
+                                      {service.subitems.map((subservice) => (
+                                        <Link
+                                          key={subservice.path}
+                                          to={subservice.path}
+                                          className="flex items-center space-x-2 py-1 px-2 rounded hover:bg-gray-100 transition-all duration-200 group/subservice"
+                                          onClick={handleLinkClick}
+                                        >
+                                          <div className="w-1 h-1 bg-gray-400 rounded-full flex-shrink-0 group-hover/subservice:bg-[#F8810A] group-hover/subservice:scale-125 transition-all duration-300"></div>
+                                          <span className="text-gray-600 text-xs group-hover/subservice:text-gray-800 group-hover/subservice:font-medium transition-all duration-300">
+                                            {subservice.name}
+                                          </span>
+                                        </Link>
+                                      ))}
+                                    </div>
+                                  )}
+                                </div>
                               ))}
                             </div>
                           </div>
@@ -367,17 +435,42 @@ const Navbar = () => {
                                   </Link>
                                   <div className="pl-4 space-y-1">
                                     {subItem.items.map((service) => (
-                                      <Link
+                                      <div
                                         key={service.path}
-                                        to={service.path}
-                                        className="flex items-center space-x-2 py-2 px-2 rounded-lg hover:bg-white/10 transition-all duration-300 group"
-                                        onClick={handleLinkClick}
+                                        className="space-y-1"
                                       >
-                                        <div className="w-1.5 h-1.5 bg-[#F8810A] rounded-full flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></div>
-                                        <span className="text-white/70 text-sm group-hover:text-white group-hover:font-medium transition-all duration-300">
-                                          {service.name}
-                                        </span>
-                                      </Link>
+                                        <Link
+                                          to={service.path}
+                                          className="flex items-center space-x-2 py-2 px-2 rounded-lg hover:bg-white/10 transition-all duration-300 group"
+                                          onClick={handleLinkClick}
+                                        >
+                                          <div className="w-1.5 h-1.5 bg-[#F8810A] rounded-full flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></div>
+                                          <span className="text-white/70 text-sm group-hover:text-white group-hover:font-medium transition-all duration-300">
+                                            {service.name}
+                                          </span>
+                                        </Link>
+
+                                        {/* Third Level Mobile Submenu */}
+                                        {service.subitems && (
+                                          <div className="pl-6 space-y-1 border-l border-white/20">
+                                            {service.subitems.map(
+                                              (subservice) => (
+                                                <Link
+                                                  key={subservice.path}
+                                                  to={subservice.path}
+                                                  className="flex items-center space-x-2 py-1 px-2 rounded-lg hover:bg-white/5 transition-all duration-300 group/sub"
+                                                  onClick={handleLinkClick}
+                                                >
+                                                  <div className="w-1 h-1 bg-white/50 rounded-full flex-shrink-0 group-hover/sub:bg-[#F8810A] transition-all duration-300"></div>
+                                                  <span className="text-white/60 text-xs group-hover/sub:text-white/90 transition-all duration-300">
+                                                    {subservice.name}
+                                                  </span>
+                                                </Link>
+                                              )
+                                            )}
+                                          </div>
+                                        )}
+                                      </div>
                                     ))}
                                   </div>
                                 </div>

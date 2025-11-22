@@ -21,7 +21,17 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="min-h-screen pt-10 bg-gradient-to-br from-[#1F5453] via-[#2D716F] to-[#1F5453] relative overflow-hidden">
+    <section className="min-h-screen  bg-gradient-to-br from-[#1F5453] via-[#2D716F] to-[#1F5453] relative overflow-hidden">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage:
+            "url(https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)",
+          opacity: 0.15,
+        }}
+      ></div>
+
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-[#F8810A]/10 rounded-full blur-3xl animate-pulse"></div>
@@ -57,100 +67,6 @@ const HeroSection = () => {
               </span>{" "}
               for India
             </h1>
-
-            {/* <p className="text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed">
-              AshtakBodhak - Your trusted partner in navigating the digital
-              transformation with robust Information & Cybersecurity awareness
-              and training solutions.
-            </p> */}
-
-            {/* <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Link
-                to="/service-offerings"
-                className="bg-gradient-to-r from-[#F8810A] to-[#FA540C] hover:from-[#FA540C] hover:to-[#F8810A] text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 text-center"
-              >
-                Explore Our Programs
-              </Link>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-[#1F5453] px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center space-x-2">
-                <Play className="w-5 h-5" />
-                <span>Watch Overview</span>
-              </button>
-            </div> */}
-
-            {/* Stats */}
-            {/* <div className="grid grid-cols-3 gap-8">
-              {stats.map((stat, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4 + index * 0.1 }}
-                  className="text-center"
-                >
-                  <div className="flex justify-center mb-2">
-                    <stat.icon className="w-8 h-8 text-[#F8810A]" />
-                  </div>
-                  <div className="text-2xl lg:text-3xl font-bold text-white">
-                    {stat.number}
-                  </div>
-                  <div className="text-gray-300 text-sm">{stat.label}</div>
-                </motion.div>
-              ))}
-            </div> */}
-          </motion.div>
-
-          {/* Visual Section */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
-          >
-            <div className="relative bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
-              {/* Cybersecurity Visualization */}
-              <div className="grid grid-cols-2 gap-4 mb-6">
-                <div className="bg-[#F8810A]/20 rounded-2xl p-4 text-center">
-                  <div className="text-2xl">🛡️</div>
-                  <div className="text-white text-sm mt-2">
-                    Threat Protection
-                  </div>
-                </div>
-                <div className="bg-[#FA540C]/20 rounded-2xl p-4 text-center">
-                  <div className="text-2xl">🔒</div>
-                  <div className="text-white text-sm mt-2">Data Security</div>
-                </div>
-                <div className="bg-[#1F5453]/20 rounded-2xl p-4 text-center">
-                  <div className="text-2xl">👥</div>
-                  <div className="text-white text-sm mt-2">
-                    Awareness Training
-                  </div>
-                </div>
-                <div className="bg-[#2D716F]/20 rounded-2xl p-4 text-center">
-                  <div className="text-2xl">🌐</div>
-                  <div className="text-white text-sm mt-2">Digital Safety</div>
-                </div>
-              </div>
-
-              <div className="text-center">
-                <h3 className="text-white text-xl font-semibold mb-4">
-                  Why AshtakBodhak?
-                </h3>
-                <ul className="text-gray-200 space-y-2 text-left">
-                  <li className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-[#F8810A] rounded-full"></div>
-                    <span>Comprehensive cybersecurity education</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-[#F8810A] rounded-full"></div>
-                    <span>Tailored for Indian digital landscape</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-[#F8810A] rounded-full"></div>
-                    <span>Bridging the awareness gap</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </motion.div>
         </div>
       </div>
