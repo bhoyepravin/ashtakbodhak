@@ -12,9 +12,10 @@ const AboutUs = () => {
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl lg:text-6xl font-bold mb-6 text-[#235ab0]"
+            className="text-4xl lg:text-6xl font-extrabold mb-6 text-white"
           >
-            About <span className="text-[#fb7e04]">AshtakBodhak</span>
+            About{" "}
+            <span className="text-white font-extrabold">AshtakBodhak</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}

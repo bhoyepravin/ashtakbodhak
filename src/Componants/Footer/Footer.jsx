@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { logo } from "../../assets";
+import { footerlogo, logo } from "../../assets";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -53,7 +53,7 @@ const Footer = () => {
           >
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 rounded-full bg-[#F8810A] flex items-center justify-center">
-                <img className="W-10 h-10" src={logo} alt="" />
+                <img className="W-10 h-10" src={footerlogo} alt="" />
               </div>
               <span className="text-white font-bold text-xl">AshtakBodhak</span>
             </div>

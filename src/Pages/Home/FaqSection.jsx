@@ -70,7 +70,7 @@ const FaqSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#235ab0] mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#184E43] mb-4">
             {faqData.title}
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
