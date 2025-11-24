@@ -148,21 +148,21 @@ const AboutUs = () => {
       </section>
 
       {/* Founder Message Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              className="bg-gradient-to-r from-[#184E43] to-[#2359B0] text-white rounded-2xl p-8 lg:p-12"
+              className="bg-[#c9e3d2] text-[#235ab0] rounded-2xl p-8 lg:p-12 "
             >
               <h3 className="text-2xl lg:text-3xl font-bold mb-6">
                 {aboutData.founder.name}
               </h3>
-              <p className="text-lg lg:text-xl leading-relaxed mb-8 opacity-90">
+              <p className="text-lg lg:text-xl leading-relaxed mb-8 text-gray-700">
                 {aboutData.founder.message}
               </p>
-              <div className="text-xl lg:text-2xl font-bold text-[#FB7E06]">
+              <div className="text-xl lg:text-2xl font-bold text-[#fb7e04]">
                 {aboutData.founder.cta}
               </div>
             </motion.div>

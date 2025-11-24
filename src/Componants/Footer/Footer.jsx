@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { logo } from "../../assets";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,27 +13,28 @@ const Footer = () => {
       links: [
         { name: "Home", path: "/" },
         { name: "About Us", path: "/about" },
-        { name: "Services", path: "/services" },
+        { name: "Services", path: "/service" },
         { name: "Contact", path: "/contact" },
       ],
     },
     {
       title: "Individual Training",
       links: [
-        { name: "Gen Z Edition", path: "/services/individual#genz" },
-        { name: "GrihaRaksha", path: "/services/individual#homemakers" },
-        { name: "SecureMindset", path: "/services/individual#professionals" },
-        { name: "SecureSenior", path: "/services/individual#seniors" },
+        { name: "Teen-agers & Young Adults (30%)", path: "/service" },
+        { name: "Home Makers (10%)", path: "/service" },
+        { name: "Working Professionals (25%)", path: "/service" },
+        { name: "Self-Employed (10%)", path: "/service" },
+        { name: "Senior Citizens (25%)", path: "/service" },
       ],
     },
     {
       title: "Technical Training",
       links: [
-        { name: "GRC", path: "/services/technical#grc" },
-        { name: "Network Security", path: "/services/technical#network" },
-        { name: "SOC", path: "/services/technical#soc" },
-        { name: "Application Security", path: "/services/technical#appsec" },
-        { name: "IAM", path: "/services/technical#iam" },
+        { name: "Governance Risk and Compliance", path: "/service" },
+        { name: "Network & Data Security", path: "/service" },
+        { name: "Security Operations Centre", path: "/services/technical#soc" },
+        { name: "Application Security & VAPT", path: "/service" },
+        { name: "Identity and Access Management", path: "/service" },
       ],
     },
   ];
@@ -51,7 +53,7 @@ const Footer = () => {
           >
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 rounded-full bg-[#F8810A] flex items-center justify-center">
-                <span className="text-white font-bold text-lg">A</span>
+                <img className="W-10 h-10" src={logo} alt="" />
               </div>
               <span className="text-white font-bold text-xl">AshtakBodhak</span>
             </div>
@@ -60,33 +62,62 @@ const Footer = () => {
               readiness in cybersecurity education and awareness.
             </p>
             <div className="flex space-x-4">
+              {/* Facebook */}
               <a
-                href="#"
-                className="text-white/70 hover:text-[#F8810A] transition-colors"
+                href="https://facebook.com/yourpage"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-[#1877F2] transition-colors duration-300"
               >
                 <svg
                   className="w-5 h-5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
-                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                 </svg>
               </a>
+
+              {/* Instagram */}
               <a
-                href="#"
-                className="text-white/70 hover:text-[#F8810A] transition-colors"
+                href="https://instagram.com/yourprofile"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-[#E4405F] transition-colors duration-300"
               >
                 <svg
                   className="w-5 h-5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
-                  <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
+                  <path d="M12.017 0C8.396 0 7.987.012 6.756.06 5.526.108 4.704.27 3.995.517c-.762.256-1.408.597-2.066 1.255C1.272 2.431.93 3.077.674 3.839.427 4.548.265 5.37.217 6.6.169 7.831.157 8.24.157 11.861c0 3.621.012 4.03.06 5.261.048 1.231.21 2.053.457 2.762.256.762.597 1.408 1.255 2.066.658.658 1.304 1 2.066 1.255.709.247 1.531.409 2.762.457 1.231.048 1.64.06 5.261.06 3.621 0 4.03-.012 5.261-.06 1.231-.048 2.053-.21 2.762-.457.762-.256 1.408-.597 2.066-1.255.658-.658 1-1.304 1.255-2.066.247-.709.409-1.531.457-2.762.048-1.231.06-1.64.06-5.261 0-3.621-.012-4.03-.06-5.261-.048-1.231-.21-2.053-.457-2.762-.256-.762-.597-1.408-1.255-2.066C20.459 1.272 19.813.93 19.051.674c-.709-.247-1.531-.409-2.762-.457C15.058.169 14.649.157 11.028.157zm0 2.16c3.539 0 3.912.01 5.12.058 1.087.044 1.678.203 2.072.336.48.163.824.359 1.184.719.36.36.556.704.719 1.184.133.394.292.985.336 2.072.048 1.208.058 1.581.058 5.12 0 3.539-.01 3.912-.058 5.12-.044 1.087-.203 1.678-.336 2.072-.163.48-.359.824-.719 1.184-.36.36-.704.556-1.184.719-.394.133-.985.292-2.072.336-1.208.048-1.581.058-5.12.058-3.539 0-3.912-.01-5.12-.058-1.087-.044-1.678-.203-2.072-.336-.48-.163-1.184-.719-1.184-1.184-.133-.394-.292-.985-.336-2.072-.048-1.208-.058-1.581-.058-5.12 0-3.539.01-3.912.058-5.12.044-1.087.203-1.678.336-2.072.163-.48.359-.824.719-1.184.36-.36.704-.556 1.184-.719.394-.133.985-.292 2.072-.336 1.208-.048 1.581-.058 5.12-.058z" />
+                  <path d="M12.017 5.838a6.18 6.18 0 1 0 0 12.36 6.18 6.18 0 0 0 0-12.36zm0 10.18a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
+                  <circle cx="18.406" cy="5.595" r="1.44" />
                 </svg>
               </a>
+
+              {/* Twitter */}
               <a
-                href="#"
-                className="text-white/70 hover:text-[#F8810A] transition-colors"
+                href="https://twitter.com/yourprofile"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-[#1DA1F2] transition-colors duration-300"
+              >
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.213c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                </svg>
+              </a>
+
+              {/* LinkedIn */}
+              <a
+                href="https://linkedin.com/company/yourcompany"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-[#0A66C2] transition-colors duration-300"
               >
                 <svg
                   className="w-5 h-5"
@@ -94,6 +125,22 @@ const Footer = () => {
                   viewBox="0 0 24 24"
                 >
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </a>
+
+              {/* YouTube */}
+              <a
+                href="https://youtube.com/c/yourchannel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-[#FF0000] transition-colors duration-300"
+              >
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                 </svg>
               </a>
             </div>

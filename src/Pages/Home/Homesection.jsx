@@ -29,7 +29,7 @@ const Homesection = () => {
   return (
     <div className="min-h-screen pt-2 bg-white">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#184E43] via-[#2359B0] to-[#1F5453] overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#a8cfb8] via-[#98c5a8] to-[#88bb98] overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-72 h-72 bg-[#FB7E06]/10 rounded-full blur-3xl animate-pulse"></div>
@@ -113,7 +113,7 @@ const Homesection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2 }}
                 whileHover={{ y: -10, scale: 1.02 }}
-                className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 text-center"
+                className="bg-gray-50 p-8 rounded-2xl  text-center"
               >
                 <div className="text-4xl lg:text-5xl font-bold text-[#FB7E06] mb-2">
                   {stat.number}
@@ -139,7 +139,7 @@ const Homesection = () => {
       </section>
 
       {/* Landscape Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <AnimatedSection className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-[#184E43] mb-6">
@@ -155,7 +155,7 @@ const Homesection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2 }}
                 whileHover={{ y: -5 }}
-                className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-md border border-gray-100 hover:shadow-lg transition-all"
+                className="bg-gray-50 p-8 rounded-2xl transition-all"
               >
                 <div className="text-5xl mb-4">{section.icon}</div>
                 <h3 className="text-2xl font-bold text-[#2359B0] mb-4">
@@ -179,13 +179,13 @@ const Homesection = () => {
       </section>
 
       {/* Solution Section */}
-      <section className="py-20 bg-gradient-to-br from-[#184E43] to-[#2359B0]">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <AnimatedSection className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#235ab0] mb-6">
               {homeData.solution.title}
             </h2>
-            <p className="text-xl text-gray-200 max-w-4xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-4xl mx-auto">
               {homeData.solution.mission}
             </p>
           </AnimatedSection>
@@ -198,16 +198,12 @@ const Homesection = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ scale: 1.05 }}
-                className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 text-white text-center"
+                className=" rounded-2xl p-6 text-center  transition-all"
               >
-                <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl"
-                  style={{ backgroundColor: pillar.color }}
-                >
-                  {index + 1}
-                </div>
-                <h3 className="text-xl font-bold mb-3">{pillar.title}</h3>
-                <p className="text-gray-200 text-sm leading-relaxed">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#235ab0] mb-3">
+                  {pillar.title}
+                </h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
                   {pillar.description}
                 </p>
               </motion.div>
@@ -217,10 +213,10 @@ const Homesection = () => {
       </section>
 
       {/* Impact Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <AnimatedSection className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#184E43] mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#235ab0] mb-6">
               {homeData.impact.title}
             </h2>
           </AnimatedSection>
@@ -232,9 +228,9 @@ const Homesection = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2 }}
-                className="text-center p-6"
+                className="text-center p-6 bg-gray-50 rounded-2xl transition-all"
               >
-                <div className="text-3xl lg:text-4xl font-bold text-[#FB7E06] mb-2">
+                <div className="text-3xl lg:text-4xl font-bold text-[#fb7e04] mb-2">
                   {goal.target}
                 </div>
                 <div className="text-gray-700 text-lg font-medium">
@@ -245,19 +241,16 @@ const Homesection = () => {
           </div>
 
           {/* Final CTA */}
-          <AnimatedSection className="text-center mt-16">
-            <div className="bg-gradient-to-r from-[#FB7E06] to-[#e57306] rounded-2xl p-8 text-white max-w-4xl mx-auto">
+          {/* <AnimatedSection className="text-center mt-16">
+            <div className="bg-white border-2 border-[#235ab0] rounded-2xl p-8 text-[#235ab0] max-w-4xl mx-auto shadow-lg">
               <h3 className="text-2xl lg:text-3xl font-bold mb-4">
                 Ready to Secure Your Digital Journey?
               </h3>
-              <p className="text-lg mb-6 opacity-90">
+              <p className="text-lg mb-6 text-gray-700">
                 Join AshtakBodhak in building a cyber-resilient India
               </p>
-              {/* <button className="bg-white text-[#184E43] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors transform hover:scale-105">
-                Partner With Us Today
-              </button> */}
             </div>
-          </AnimatedSection>
+          </AnimatedSection> */}
         </div>
       </section>
     </div>

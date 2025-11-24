@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import trainerData from "../../Constant/AboutUs/trainerData";
 import { trainerimg } from "../../assets";
+import { useNavigate } from "react-router-dom";
 
 // Animation components
 const AnimatedSection = ({ children, className = "" }) => {
@@ -23,6 +24,7 @@ const AnimatedSection = ({ children, className = "" }) => {
     triggerOnce: true,
     threshold: 0.1,
   });
+  const navigate = useNavigate();
 
   return (
     <motion.div
@@ -280,6 +282,7 @@ const TrainerComponent = () => {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.button
+                onClick={() => navigate("/service")}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-[#FB7E06] hover:bg-[#e57306] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
@@ -287,6 +290,7 @@ const TrainerComponent = () => {
                 View Courses
               </motion.button>
               <motion.button
+                onClick={() => (window.location.href = "tel:+919967045817")}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="border-2 border-[#2359B0] text-[#2359B0] hover:bg-[#2359B0] hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"

@@ -62,7 +62,7 @@ const FaqSection = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         {/* Header */}
         <motion.div
@@ -70,7 +70,7 @@ const FaqSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#235ab0] mb-4">
             {faqData.title}
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -86,19 +86,19 @@ const FaqSection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden"
+              className="bg-gray-50 rounded-2xl shadow-sm overflow-hidden"
             >
               {/* Question Header */}
               <button
                 onClick={() => toggleFaq(faq.id)}
-                className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-[#c9e3d2] transition-colors"
               >
-                <h3 className="text-lg lg:text-xl font-semibold text-gray-900 pr-4">
+                <h3 className="text-lg lg:text-xl font-semibold text-[#235ab0] pr-4">
                   {faq.question}
                 </h3>
                 <motion.div
                   animate={{ rotate: activeFaq === faq.id ? 180 : 0 }}
-                  className="flex-shrink-0 w-6 h-6 text-[#FB7E06]"
+                  className="flex-shrink-0 w-6 h-6 text-[#fb7e04]"
                 >
                   <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
@@ -119,7 +119,6 @@ const FaqSection = () => {
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="border-t border-gray-200"
                   >
                     <div className="p-6">
                       {/* Text Answer */}
@@ -150,7 +149,7 @@ const FaqSection = () => {
                               </span>
                               <button
                                 onClick={() => enterFullscreen(faq.id)}
-                                className="text-white hover:text-[#FB7E06] transition-colors"
+                                className="text-white hover:text-[#fb7e04] transition-colors"
                               >
                                 <Maximize size={20} />
                               </button>
@@ -160,7 +159,7 @@ const FaqSection = () => {
                             <div className="absolute inset-0 flex items-center justify-center">
                               <button
                                 onClick={() => toggleVideo(faq.id)}
-                                className="bg-[#FB7E06] hover:bg-[#e57306] text-white rounded-full p-4 transition-all transform hover:scale-110"
+                                className="bg-[#fb7e04] hover:bg-[#e57306] text-white rounded-full p-4 transition-all transform hover:scale-110"
                               >
                                 {playingVideo === faq.id ? (
                                   <Pause size={24} />
@@ -174,7 +173,7 @@ const FaqSection = () => {
                             <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
                               <button
                                 onClick={() => toggleMute(faq.id)}
-                                className="text-white hover:text-[#FB7E06] transition-colors"
+                                className="text-white hover:text-[#fb7e04] transition-colors"
                               >
                                 {videoRefs.current[faq.id]?.muted ? (
                                   <VolumeX size={20} />
@@ -186,7 +185,7 @@ const FaqSection = () => {
                               {/* Progress Bar */}
                               <div className="flex-1 mx-4 bg-gray-600 rounded-full h-1">
                                 <div
-                                  className="bg-[#FB7E06] h-1 rounded-full transition-all"
+                                  className="bg-[#fb7e04] h-1 rounded-full transition-all"
                                   style={{
                                     width: videoRefs.current[faq.id]
                                       ? `${
@@ -218,7 +217,7 @@ const FaqSection = () => {
                             </div>
                             <button
                               onClick={() => toggleVideo(faq.id)}
-                              className="bg-[#FB7E06] hover:bg-[#e57306] text-white px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors"
+                              className="bg-[#fb7e04] hover:bg-[#e57306] text-white px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors"
                             >
                               {playingVideo === faq.id ? (
                                 <>
@@ -249,17 +248,17 @@ const FaqSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-center mt-16"
         >
-          <div className="bg-gradient-to-r from-[#184E43] to-[#2359B0] rounded-2xl p-8 text-white">
+          <div className="bg-gray-50 rounded-2xl p-8 text-[#235ab0] ">
             <h3 className="text-2xl lg:text-3xl font-bold mb-4">
               Still have questions?
             </h3>
-            <p className="text-lg mb-6 opacity-90">
+            <p className="text-lg mb-6 text-gray-700">
               Our cybersecurity experts are here to help you with personalized
               guidance.
             </p>
             <button
               onClick={() => navigate("/contact")}
-              className="bg-[#FB7E06] hover:bg-[#e57306] text-white px-8 py-3 rounded-lg font-semibold transition-colors transform hover:scale-105"
+              className="bg-[#fb7e04] hover:bg-[#e57306] text-white px-8 py-3 rounded-lg font-semibold transition-colors transform hover:scale-105"
             >
               Contact Our Experts
             </button>
