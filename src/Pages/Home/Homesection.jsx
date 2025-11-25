@@ -30,7 +30,7 @@ const Homesection = () => {
     <div className="min-h-screen pt-2 bg-white">
       {/* Hero Section */}
       {/* <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#a8cfb8] via-[#98c5a8] to-[#88bb98] overflow-hidden"></section> */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#a8cfb8] via-[#2250e9] to-[#88bb98] overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#a8cfb8] via-[#98c5a8] to-[#88bb98] overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-72 h-72 bg-[#FB7E06]/10 rounded-full blur-3xl animate-pulse"></div>
