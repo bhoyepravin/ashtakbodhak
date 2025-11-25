@@ -142,6 +142,36 @@ const TrainerComponent = () => {
           </div>
         </AnimatedSection>
 
+        {/* Achievements */}
+        <AnimatedSection className="mb-12">
+          <div className="bg-gradient-to-br from-[#c9e3d2] to-[#b8d9c8] rounded-2xl p-8">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-[#235ab0] mb-4">
+                {trainerData.achievements.title}
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {trainerData.achievements.items.map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: index * 0.1 }}
+                  className="text-center p-6 bg-[[#c9e3d2] rounded-xl "
+                >
+                  <div className="text-3xl text-[#235ab0] mb-4">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-lg font-bold text-[#235ab0] mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-700 text-sm">{item.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </AnimatedSection>
+
         {/* Core Competencies */}
         <AnimatedSection className="mb-12">
           <div className="text-center mb-8">
@@ -221,36 +251,6 @@ const TrainerComponent = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
                   className="text-center p-6 bg-gray-50 rounded-xl"
-                >
-                  <div className="text-3xl text-[#235ab0] mb-4">
-                    {item.icon}
-                  </div>
-                  <h3 className="text-lg font-bold text-[#235ab0] mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-700 text-sm">{item.description}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </AnimatedSection>
-
-        {/* Achievements */}
-        <AnimatedSection className="mb-12">
-          <div className="bg-gradient-to-br from-[#c9e3d2] to-[#b8d9c8] rounded-2xl p-8">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-[#235ab0] mb-4">
-                {trainerData.achievements.title}
-              </h2>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {trainerData.achievements.items.map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: index * 0.1 }}
-                  className="text-center p-6 bg-[[#c9e3d2] rounded-xl "
                 >
                   <div className="text-3xl text-[#235ab0] mb-4">
                     {item.icon}

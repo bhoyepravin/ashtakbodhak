@@ -95,7 +95,7 @@ const Homesection = () => {
       </section>
 
       {/* Problem Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-100">
         <div className="container mx-auto px-4">
           <AnimatedSection className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-[#184E43] mb-6">
@@ -114,7 +114,7 @@ const Homesection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2 }}
                 whileHover={{ y: -10, scale: 1.02 }}
-                className="bg-gray-50 p-8 rounded-2xl  text-center"
+                className="bg-gray-100 p-8 rounded-2xl  text-center"
               >
                 <div className="text-4xl lg:text-5xl font-bold text-[#FB7E06] mb-2">
                   {stat.number}
@@ -180,7 +180,7 @@ const Homesection = () => {
       </section>
 
       {/* Solution Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-100">
         <div className="container mx-auto px-4">
           <AnimatedSection className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-[#184E43] mb-6">

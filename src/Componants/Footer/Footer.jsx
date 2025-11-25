@@ -30,11 +30,44 @@ const Footer = () => {
     {
       title: "Technical Training",
       links: [
-        { name: "Governance Risk and Compliance", path: "/service" },
-        { name: "Network & Data Security", path: "/service" },
-        { name: "Security Operations Centre", path: "/services/technical#soc" },
-        { name: "Application Security & VAPT", path: "/service" },
         { name: "Identity and Access Management", path: "/service" },
+        { name: "Governance Risk and Compliance (GRC)", path: "/service" },
+        { name: "Network and Data Security", path: "/service" },
+        {
+          name: "Security Operations Centre (SOC)",
+          path: "/services/technical#soc",
+        },
+        { name: "Application Security & VAPT", path: "/service" },
+      ],
+    },
+    {
+      title: "Sector-wise Awareness",
+      links: [
+        { name: "Banking / BFSI Sector", path: "/service" },
+        { name: "Pharmaceutical", path: "/service" },
+        { name: "Healthcare", path: "/service" },
+        { name: "Manufacturing", path: "/service" },
+        { name: "FMCG", path: "/service" },
+      ],
+    },
+    {
+      title: "Consulting Services",
+      links: [
+        { name: "vCISO (Virtual CISO)", path: "/service" },
+        { name: "Secure Network Architecture", path: "/service" },
+        { name: "Setting up Cyber Security Posture", path: "/service" },
+        { name: "Independent Audit / Risk Assessment", path: "/service" },
+        { name: "GRC Services", path: "/service" },
+      ],
+    },
+    {
+      title: "Education & Industry",
+      links: [
+        { name: "Bridging Education & Industry", path: "/service" },
+        { name: "Industry Workshops for Students", path: "/service" },
+        { name: "Topic-wise Awareness Trainings", path: "/service" },
+        { name: "Curriculum Development", path: "/service" },
+        { name: "Consulting Services Sector", path: "/service" },
       ],
     },
   ];
@@ -42,7 +75,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#1F5453] text-white pt-12 pb-6">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-8 mb-8">
           {/* Company Info */}
           <motion.div
             className="lg:col-span-1"

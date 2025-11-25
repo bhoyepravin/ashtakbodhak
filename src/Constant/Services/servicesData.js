@@ -168,7 +168,7 @@ export const servicesData = {
   },
 
   sectorSpecific: {
-    title: "Sector / Industry Specific Trainings",
+    title: "Industry Specific Trainings",
     description: "Industry-specific cybersecurity training programs",
     backgroundColor: "#F8810A", // Sorbus
     textColor: "#FFFFFF", // White

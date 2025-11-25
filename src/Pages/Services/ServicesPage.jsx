@@ -73,7 +73,7 @@ const ServicesPage = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 lg:mb-16"
         >
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#235ab0] mb-4">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#184E43]  mb-4">
             Our Cybersecurity Services
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -97,7 +97,7 @@ const ServicesPage = () => {
               onClick={() => setActiveCategory(tab.key)}
               className={`px-4 py-2 sm:px-6 sm:py-3 rounded-full font-semibold text-sm sm:text-base transition-all duration-300 ${
                 activeCategory === tab.key
-                  ? "bg-[#235ab0] text-white shadow-lg"
+                  ? "bg-[#184E43] text-white shadow-lg"
                   : "bg-[#c9e3d2] text-[#235ab0] hover:bg-[#b8d9c8]"
               }`}
             >
@@ -117,7 +117,7 @@ const ServicesPage = () => {
             className="rounded-2xl p-6 lg:p-8 mb-8 bg-gray-50"
           >
             <div className="mb-6 lg:mb-8">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#235ab0] mb-3 lg:mb-4">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#184E43] mb-3 lg:mb-4">
                 {currentCategory.title}
               </h2>
               <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed">
@@ -189,7 +189,7 @@ const ServicesPage = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+              className="fixed inset-0 bg-opacity-50 z-50 flex items-center justify-center p-3 sm:p-4"
               onClick={closeModal}
             >
               {/* Modal Content */}
@@ -199,26 +199,26 @@ const ServicesPage = () => {
                 animate="visible"
                 exit="exit"
                 transition={{ type: "spring", damping: 25, stiffness: 300 }}
-                className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden shadow-2xl"
+                className="bg-white rounded-xl sm:rounded-2xl w-full max-w-md sm:max-w-2xl max-h-[85vh] sm:max-h-[90vh] overflow-hidden shadow-xl"
                 onClick={(e) => e.stopPropagation()}
               >
                 {/* Modal Header */}
-                <div className="bg-gradient-to-r from-[#235ab0] to-[#13763d] p-6 text-white">
-                  <div className="flex justify-between items-start">
-                    <div className="flex-1">
-                      <h2 className="text-2xl sm:text-3xl font-bold mb-2">
+                <div className="bg-gradient-to-r from-[#184E43] to-[#13763d] p-4 sm:p-6 text-white">
+                  <div className="flex justify-between items-start gap-3">
+                    <div className="flex-1 min-w-0">
+                      <h2 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2 line-clamp-2">
                         {selectedService.title}
                       </h2>
-                      <p className="text-gray-100 text-lg opacity-90">
+                      <p className="text-gray-100 text-sm sm:text-base opacity-90 line-clamp-2">
                         {selectedService.description}
                       </p>
                     </div>
                     <button
                       onClick={closeModal}
-                      className="ml-4 text-white hover:text-[#fb7e04] transition-colors duration-300 p-2 rounded-full hover:bg-white hover:bg-opacity-10"
+                      className="flex-shrink-0 text-white hover:text-[#fb7e04] transition-colors duration-300 p-1 sm:p-2 rounded-full hover:bg-white hover:bg-opacity-10"
                     >
                       <svg
-                        className="w-6 h-6 sm:w-8 sm:h-8"
+                        className="w-5 h-5 sm:w-6 sm:h-6"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -235,29 +235,29 @@ const ServicesPage = () => {
                 </div>
 
                 {/* Modal Body */}
-                <div className="p-6 sm:p-8 max-h-[60vh] overflow-y-auto">
+                <div className="p-4 sm:p-6 max-h-[50vh] sm:max-h-[55vh] overflow-y-auto">
                   {/* Service Points */}
                   {selectedService.points &&
                     selectedService.points.length > 0 && (
-                      <div className="mb-6">
-                        <h3 className="text-xl sm:text-2xl font-semibold text-[#235ab0] mb-4">
+                      <div className="mb-4 sm:mb-6">
+                        <h3 className="text-lg sm:text-xl font-semibold text-[#235ab0] mb-3 sm:mb-4">
                           Key Features & Benefits
                         </h3>
-                        <div className="space-y-3">
+                        <div className="space-y-2 sm:space-y-3">
                           {selectedService.points.map((point, index) => (
                             <motion.div
                               key={index}
                               initial={{ opacity: 0, x: -20 }}
                               animate={{ opacity: 1, x: 0 }}
                               transition={{ delay: index * 0.1 }}
-                              className="flex items-start p-4 rounded-lg bg-[#c9e3d2] border border-[#b8d9c8]"
+                              className="flex items-start p-3 sm:p-4 rounded-lg bg-[#c9e3d2] border border-[#b8d9c8]"
                             >
-                              <div className="flex-shrink-0 w-6 h-6 bg-[#fb7e04] rounded-full flex items-center justify-center mr-3 mt-1">
-                                <span className="text-white text-sm font-bold">
+                              <div className="flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 bg-[#fb7e04] rounded-full flex items-center justify-center mr-2 sm:mr-3 mt-0.5">
+                                <span className="text-white text-xs sm:text-sm font-bold">
                                   ✓
                                 </span>
                               </div>
-                              <p className="text-gray-700 text-base leading-relaxed">
+                              <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
                                 {point}
                               </p>
                             </motion.div>
@@ -268,12 +268,12 @@ const ServicesPage = () => {
 
                   {/* Delivery Method */}
                   {selectedService.deliveryMethod && (
-                    <div className="mb-6">
-                      <h3 className="text-xl sm:text-2xl font-semibold text-[#235ab0] mb-3">
+                    <div className="mb-4 sm:mb-6">
+                      <h3 className="text-lg sm:text-xl font-semibold text-[#235ab0] mb-2 sm:mb-3">
                         Delivery Method
                       </h3>
-                      <div className="p-4 rounded-lg bg-[#c9e3d2] border border-[#b8d9c8]">
-                        <p className="text-gray-700 text-base leading-relaxed">
+                      <div className="p-3 sm:p-4 rounded-lg bg-[#c9e3d2] border border-[#b8d9c8]">
+                        <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
                           {selectedService.deliveryMethod}
                         </p>
                       </div>
@@ -282,12 +282,12 @@ const ServicesPage = () => {
 
                   {/* Additional Information */}
                   {selectedService.additionalInfo && (
-                    <div className="mb-6">
-                      <h3 className="text-xl sm:text-2xl font-semibold text-[#235ab0] mb-3">
+                    <div className="mb-4 sm:mb-6">
+                      <h3 className="text-lg sm:text-xl font-semibold text-[#235ab0] mb-2 sm:mb-3">
                         Additional Information
                       </h3>
-                      <div className="p-4 rounded-lg bg-[#c9e3d2] border border-[#b8d9c8]">
-                        <p className="text-gray-700 text-base leading-relaxed">
+                      <div className="p-3 sm:p-4 rounded-lg bg-[#c9e3d2] border border-[#b8d9c8]">
+                        <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
                           {selectedService.additionalInfo}
                         </p>
                       </div>
@@ -296,12 +296,12 @@ const ServicesPage = () => {
 
                   {/* Duration */}
                   {selectedService.duration && (
-                    <div className="mb-6">
-                      <h3 className="text-xl sm:text-2xl font-semibold text-[#235ab0] mb-3">
+                    <div className="mb-4 sm:mb-6">
+                      <h3 className="text-lg sm:text-xl font-semibold text-[#235ab0] mb-2 sm:mb-3">
                         Duration
                       </h3>
-                      <div className="p-4 rounded-lg bg-[#c9e3d2] border border-[#b8d9c8]">
-                        <p className="text-gray-700 text-base leading-relaxed">
+                      <div className="p-3 sm:p-4 rounded-lg bg-[#c9e3d2] border border-[#b8d9c8]">
+                        <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
                           {selectedService.duration}
                         </p>
                       </div>
@@ -311,11 +311,11 @@ const ServicesPage = () => {
                   {/* Target Audience */}
                   {selectedService.targetAudience && (
                     <div>
-                      <h3 className="text-xl sm:text-2xl font-semibold text-[#235ab0] mb-3">
+                      <h3 className="text-lg sm:text-xl font-semibold text-[#235ab0] mb-2 sm:mb-3">
                         Target Audience
                       </h3>
-                      <div className="p-4 rounded-lg bg-[#c9e3d2] border border-[#b8d9c8]">
-                        <p className="text-gray-700 text-base leading-relaxed">
+                      <div className="p-3 sm:p-4 rounded-lg bg-[#c9e3d2] border border-[#b8d9c8]">
+                        <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
                           {selectedService.targetAudience}
                         </p>
                       </div>
@@ -324,14 +324,14 @@ const ServicesPage = () => {
                 </div>
 
                 {/* Modal Footer */}
-                <div className="border-t border-gray-200 p-6 bg-gray-50">
-                  <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-                    <p className="text-gray-600 text-sm text-center sm:text-left">
+                <div className="border-t border-gray-200 p-3 sm:p-4 bg-gray-50">
+                  <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
+                    <p className="text-gray-600 text-xs sm:text-sm text-center sm:text-left">
                       Ready to get started with {selectedService.title}?
                     </p>
                     <button
                       onClick={() => navigate("/contact")}
-                      className="bg-gradient-to-r from-[#fb7e04] to-[#e57306] text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 text-base"
+                      className="bg-gradient-to-r from-[#fb7e04] to-[#e57306] text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 text-sm sm:text-base w-full sm:w-auto"
                     >
                       Contact Us Now
                     </button>

@@ -27,19 +27,23 @@ const contactData = {
   ],
   services: [
     {
-      title: "Individual Training",
+      title: "Basic Cyber Awareness",
       description: "Cybersecurity awareness for individuals",
     },
     {
-      title: "Corporate Training",
+      title: "Technical Trainings",
       description: "Employee security awareness programs",
     },
     {
-      title: "Technical Consulting",
+      title: "Industry Specific Trainings",
       description: "vCISO and security framework implementation",
     },
     {
-      title: "Sector-Specific Solutions",
+      title: "Consulting Services",
+      description: "Industry-tailored cybersecurity programs",
+    },
+    {
+      title: "Bridging Education & Industry Gap",
       description: "Industry-tailored cybersecurity programs",
     },
   ],

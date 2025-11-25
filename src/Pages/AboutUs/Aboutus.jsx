@@ -56,7 +56,7 @@ const AboutUs = () => {
       {/* Story Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl lg:text-4xl font-bold text-center text-[#235ab0] mb-12">
+          <h2 className="text-3xl lg:text-5xl font-bold text-center text-[#184E43] mb-12">
             Ashtak Bodhak Story
           </h2>
           <div className="space-y-12 max-w-4xl mx-auto">
@@ -82,7 +82,7 @@ const AboutUs = () => {
       {/* Mission Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl lg:text-4xl font-bold text-center text-[#235ab0] mb-12">
+          <h2 className="text-3xl lg:text-5xl font-bold text-center text-[#184E43] mb-12">
             {aboutData.mission.title}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -110,7 +110,7 @@ const AboutUs = () => {
       {/* Services Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl lg:text-4xl font-bold text-center text-[#235ab0] mb-12">
+          <h2 className="text-3xl lg:text-5xl font-bold text-center text-[#184E43] mb-12">
             {aboutData.services.title}
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -149,7 +149,7 @@ const AboutUs = () => {
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              className="bg-gray-50 text-[#235ab0] rounded-2xl p-8 lg:p-12"
+              className="bg-gray-50 text-[#184E43] rounded-2xl p-8 lg:p-12"
             >
               <h3 className="text-2xl lg:text-5xl font-extrabold mb-6">
                 {aboutData.founder.name}
@@ -164,7 +164,6 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-
       <TrainerComponent />
     </div>
   );
