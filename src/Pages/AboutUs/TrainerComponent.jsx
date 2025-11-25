@@ -44,7 +44,7 @@ const TrainerComponent = () => {
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
-        <AnimatedSection className="text-center mb-12 lg:mb-16">
+        {/* <AnimatedSection className="text-center mb-12 lg:mb-16">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -62,7 +62,7 @@ const TrainerComponent = () => {
             Learn from an industry expert with decades of real-world
             cybersecurity experience
           </motion.p>
-        </AnimatedSection>
+        </AnimatedSection> */}
 
         {/* About Section */}
         <AnimatedSection className="mb-12">
@@ -213,7 +213,7 @@ const TrainerComponent = () => {
                 {trainerData.education.title}
               </h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {trainerData.education.items.map((item, index) => (
                 <motion.div
                   key={index}
@@ -263,44 +263,6 @@ const TrainerComponent = () => {
               ))}
             </div>
           </div>
-        </AnimatedSection>
-
-        {/* CTA Section */}
-        <AnimatedSection className="text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="bg-gray-50 p-8 rounded-2xl "
-          >
-            <h3 className="text-2xl sm:text-3xl font-bold text-[#235ab0] mb-4">
-              {trainerData.founder.name}
-            </h3>
-            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-              {trainerData.founder.message}
-            </p>
-            <div className="text-xl font-bold text-[#fb7e04] mb-6">
-              {trainerData.founder.cta}
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
-                onClick={() => navigate("/service")}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-[#fb7e04] hover:bg-[#e57306] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
-              >
-                View Courses
-              </motion.button>
-              <motion.button
-                onClick={() => (window.location.href = "tel:+919967045817")}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="border-2 border-[#235ab0] text-[#235ab0] hover:bg-[#235ab0] hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
-              >
-                Contact Trainer
-              </motion.button>
-            </div>
-          </motion.div>
         </AnimatedSection>
       </div>
     </div>

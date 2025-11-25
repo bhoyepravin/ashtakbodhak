@@ -15,7 +15,7 @@ const AboutUs = () => {
             className="text-4xl lg:text-6xl font-extrabold mb-6 text-white"
           >
             About{" "}
-            <span className="text-white font-extrabold">AshtakBodhak</span>
+            <span className="text-white font-extrabold">Ashtak Bodhak</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -57,7 +57,7 @@ const AboutUs = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl lg:text-4xl font-bold text-center text-[#235ab0] mb-12">
-            Our Story
+            Ashtak Bodhak Story
           </h2>
           <div className="space-y-12 max-w-4xl mx-auto">
             {aboutData.about.sections.map((section, index) => (
@@ -70,7 +70,7 @@ const AboutUs = () => {
                 <div className="text-3xl text-[#fb7e04] flex-shrink-0">
                   {section.icon}
                 </div>
-                <p className="text-gray-700 text-lg leading-relaxed">
+                <p className="text-gray-700 text-lg leading-relaxed whitespace-pre-line">
                   {section.content}
                 </p>
               </motion.div>
@@ -151,7 +151,7 @@ const AboutUs = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               className="bg-gray-50 text-[#235ab0] rounded-2xl p-8 lg:p-12"
             >
-              <h3 className="text-2xl lg:text-3xl font-bold mb-6">
+              <h3 className="text-2xl lg:text-5xl font-extrabold mb-6">
                 {aboutData.founder.name}
               </h3>
               <p className="text-lg lg:text-xl leading-relaxed mb-8 text-gray-700">

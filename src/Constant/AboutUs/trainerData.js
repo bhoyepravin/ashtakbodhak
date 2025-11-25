@@ -86,10 +86,10 @@ const trainerData = {
   education: {
     title: "Education & Credentials",
     items: [
-      {
-        title: "Formal Education",
-        description: "B.E. in Electronics Major",
-      },
+      // {
+      //   title: "Formal Education",
+      //   description: "B.E. in Electronics Major",
+      // },
       {
         title: "Professional Certifications",
         description:

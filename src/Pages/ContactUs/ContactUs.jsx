@@ -123,7 +123,7 @@ Thank you!
   return (
     <div className="min-h-screen pt-18 bg-gradient-to-br from-gray-50 to-white">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-[#184E43] to-[#2359B0] text-white">
+      <section className="py-20 bg-gradient-to-br from-[#a8cfb8] via-[#98c5a8] to-[#88bb98] text-white">
         <div className="container mx-auto px-4 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
@@ -252,13 +252,14 @@ Thank you!
                     </div>
                     <div>
                       <label className="block text-gray-700 font-semibold mb-2">
-                        Email Address
+                        Email Address *
                       </label>
                       <input
                         type="email"
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
+                        required
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FB7E06] focus:border-transparent transition-all"
                         placeholder="Enter your email"
                       />
@@ -268,13 +269,14 @@ Thank you!
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-gray-700 font-semibold mb-2">
-                        Phone Number
+                        Phone Number *
                       </label>
                       <input
                         type="tel"
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
+                        required
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FB7E06] focus:border-transparent transition-all"
                         placeholder="Enter your phone number"
                       />
@@ -301,7 +303,7 @@ Thank you!
 
                   <div>
                     <label className="block text-gray-700 font-semibold mb-2">
-                      Your Message *
+                      Your Message
                     </label>
                     <textarea
                       name="message"
