@@ -17,6 +17,7 @@ import {
 import trainerData from "../../Constant/AboutUs/trainerData";
 import { trainerimg } from "../../assets";
 import { useNavigate } from "react-router-dom";
+import aboutData from "../../Constant/AboutUs/aboutData";
 
 // Animation components
 const AnimatedSection = ({ children, className = "" }) => {
@@ -44,28 +45,30 @@ const TrainerComponent = () => {
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
-        {/* <AnimatedSection className="text-center mb-12 lg:mb-16">
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#235ab0] mb-4"
-          >
-            Meet Your Trainer
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto"
-          >
-            Learn from an industry expert with decades of real-world
-            cybersecurity experience
-          </motion.p>
-        </AnimatedSection> */}
+        <section className=" bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                className="bg-gray-50 text-[#184E43] rounded-2xl p-8 lg:p-12"
+              >
+                <h3 className="text-2xl lg:text-5xl font-extrabold mb-6">
+                  {aboutData.founder.name}
+                </h3>
+                <p className="text-lg lg:text-xl leading-relaxed mb-8 text-gray-700">
+                  {aboutData.founder.message}
+                </p>
+                <div className="text-xl lg:text-2xl font-bold text-[#fb7e04]">
+                  {aboutData.founder.cta}
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
 
         {/* About Section */}
-        <AnimatedSection className="mb-12">
+        <AnimatedSection className="mb-20">
           <div className="bg-gray-50 rounded-2xl  p-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               {/* Left Side - Image & Stats */}

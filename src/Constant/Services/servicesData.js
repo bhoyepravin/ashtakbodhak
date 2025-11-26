@@ -249,71 +249,75 @@ export const servicesData = {
 
   consultingServices: {
     title: "Consulting Services",
-    description: "Professional cybersecurity consulting and advisory services",
-    backgroundColor: "#FA540C", // Orange Red
-    textColor: "#FFFFFF", // White
-    accentColor: "#1F5453", // Blue Dianne
+    description:
+      "At AshtakBodhak LLP, we believe cybersecurity is more than just technology — it’s about building trust, resilience, and awareness across organizations and communities. Our consulting services are designed to help enterprises, SMEs, NBFCs, BFSI institutions strengthen their security posture while aligning with global or in country regulatory standards.",
+    backgroundColor: "#FA540C",
+    textColor: "#FFFFFF",
+    accentColor: "#1F5453",
     services: [
       {
-        title: "vCISO (Virtual Chief Information Security Officer)",
-        description: "Strategic cybersecurity leadership and advisory services",
-        points: [
-          "Strategic cybersecurity leadership and governance",
-          "Policy development and implementation oversight",
-          "Risk management framework setup and maintenance",
-          "Compliance and regulatory guidance",
-          "Security program maturity assessment",
-          "Executive-level security advisory and reporting",
-        ],
-      },
-      {
-        title: "Secure Network Architecture",
+        title: "Security Architecture & Strategy",
         description:
-          "Design and implementation of secure network infrastructure",
+          "Tailored architecture designed to safeguard networks, applications, and data, ensuring scalability and compliance",
         points: [
-          "Network segmentation strategy and implementation",
+          "Secure network architecture design and implementation",
           "Zero Trust architecture design and deployment",
-          "Cloud network security architecture",
-          "Wireless security configuration and optimization",
-          "Network monitoring and logging architecture",
+          "Cloud security architecture and strategy",
+          "Application security framework development",
+          "Data protection architecture and encryption strategies",
           "Disaster recovery and business continuity planning",
         ],
       },
       {
-        title: "Setting up Information and Cyber Security Posture",
+        title: "Regulatory Alignment",
         description:
-          "Comprehensive security posture establishment and enhancement",
+          "Guidance on ISO 27001, PCI-DSS, DPDP Act, and RBI directives to keep your organization audit-ready",
         points: [
-          "Security maturity assessment and gap analysis",
-          "Control framework implementation (NIST, ISO 27001, etc.)",
-          "Security policy development and deployment",
-          "Incident response planning and testing",
-          "Security awareness program development",
-          "Continuous monitoring and improvement implementation",
+          "ISO 27001 implementation and certification support",
+          "PCI-DSS compliance and audit preparation",
+          "DPDP Act compliance framework development",
+          "RBI directive implementation for financial institutions",
+          "Regulatory compliance audits and gap analysis",
+          "Compliance management and reporting frameworks",
         ],
       },
       {
-        title: "Independent Audit / Risk Assessment",
-        description: "Third-party security assessments and compliance audits",
+        title: "Risk Assessment & Vulnerability Management",
+        description:
+          "Comprehensive reviews of systems and processes to identify gaps, mitigate risks, and prioritize remediation",
         points: [
           "Comprehensive risk assessments and threat modeling",
-          "Regulatory compliance audits (RBI, IRDAI, SEBI, etc.)",
           "Technical vulnerability assessments and penetration testing",
-          "Process and control reviews",
-          "Gap analysis and remediation planning",
-          "Audit report preparation and certification support",
+          "Risk treatment planning and mitigation strategies",
+          "Vulnerability management program development",
+          "Process and control effectiveness reviews",
+          "Continuous risk monitoring and assessment",
         ],
       },
       {
-        title: "GRC Services",
-        description: "Governance, Risk and Compliance management services",
+        title: "Solution Integration",
+        description:
+          "Comparative analysis and facilitate the deployment of security tools such as SIEM, EDR, DLP, and UTM for optimized protection",
         points: [
-          "GRC framework implementation and optimization",
-          "Risk assessment and treatment planning",
-          "Policy and procedure development",
-          "Compliance management and reporting",
-          "Third-party risk management",
-          "Security metrics and executive reporting",
+          "Security tool evaluation and comparative analysis",
+          "SIEM solution deployment and configuration",
+          "EDR implementation and optimization",
+          "DLP solution integration and policy setup",
+          "UTM deployment and management",
+          "Security orchestration and automation",
+        ],
+      },
+      {
+        title: "Awareness & Training Programs",
+        description:
+          "Customized trainings, workshops, simulations, and campaigns to empower employees, students, and stakeholders with practical cybersecurity knowledge",
+        points: [
+          "Customized security awareness programs",
+          "Phishing simulation and training campaigns",
+          "Role-based security training workshops",
+          "Security culture development initiatives",
+          "Stakeholder engagement and empowerment programs",
+          "Continuous security education frameworks",
         ],
       },
     ],
@@ -321,39 +325,29 @@ export const servicesData = {
 
   educationIndustryBridge: {
     title: "Bridging Education & Industry Gap",
-    description: "Connecting academic learning with industry requirements",
-    backgroundColor: "#1F5453", // Blue Dianne
-    textColor: "#FFFFFF", // White
-    accentColor: "#F8810A", // Sorbus
+    description:
+      "At AshtakBodhak LLP, we recognize that educational institutions are not only centres of learning but also custodians of sensitive data, intellectual property, and the next generation of professionals. With the growing digital footprint of universities, colleges, and schools, cybersecurity has become a critical priority. We work as a conduit between academia and industry, ensuring that institutions are equipped with both robust security practices and practical exposure to real-world challenges.",
+    backgroundColor: "#1F5453",
+    textColor: "#FFFFFF",
+    accentColor: "#F8810A",
     services: [
       {
-        title: "Industry specific workshops to students",
+        title: "Campus Security Assessments",
         description:
-          "Practical industry exposure and hands-on learning for students",
+          "Evaluating IT infrastructure, networks, and applications to identify vulnerabilities and strengthen defences",
         points: [
-          "Hands-on cybersecurity workshops and labs",
-          "Real-world case study analysis and simulations",
-          "Industry tool and technology exposure",
-          "Practical skill development sessions",
-          "Industry expert interactions and mentorship",
-          "Career guidance and placement preparation",
+          "Comprehensive IT infrastructure evaluation",
+          "Network vulnerability assessment",
+          "Application security testing",
+          "Defence strengthening recommendations",
+          "Risk assessment and mitigation planning",
+          "Compliance and security framework alignment",
         ],
       },
       {
-        title: "IS and Cyber Awareness trainings (topic-wise)",
-        description: "Specialized topic-based security training programs",
-        points: [
-          "Customized training modules based on specific needs",
-          "Latest threat landscape updates and trends",
-          "Practical defense techniques and best practices",
-          "Industry-specific security requirements",
-          "Interactive learning sessions and workshops",
-          "Skill assessment and certification programs",
-        ],
-      },
-      {
-        title: "Curriculum Development on Information & Cyber Security",
-        description: "Academic curriculum design and development services",
+        title: "Cybersecurity Curriculum Integration",
+        description:
+          "Collaborating with faculty to embed industry-relevant modules, labs, and case studies into academic programs",
         points: [
           "Industry-aligned curriculum design and development",
           "Latest technology and tool integration",
@@ -361,6 +355,45 @@ export const servicesData = {
           "Assessment methodology design",
           "Faculty development programs",
           "Industry-academia collaboration frameworks",
+        ],
+      },
+      {
+        title: "Hands-on Labs & Workshops",
+        description:
+          "Designing practical workshops and courses in areas like ethical hacking, SIEM tools, endpoint protection, and secure coding",
+        points: [
+          "Hands-on cybersecurity workshops and labs",
+          "Ethical hacking and penetration testing",
+          "SIEM tools and security monitoring",
+          "Endpoint protection and management",
+          "Secure coding practices",
+          "Industry expert interactions and mentorship",
+        ],
+      },
+      {
+        title: "Awareness Campaigns",
+        description:
+          "Creating tailored programs for students, faculty, and staff to build a culture of security across the institution",
+        points: [
+          "Customized training modules based on specific needs",
+          "Latest threat landscape updates and trends",
+          "Practical defense techniques and best practices",
+          "Role-based security awareness programs",
+          "Interactive learning sessions and workshops",
+          "Skill assessment and certification programs",
+        ],
+      },
+      {
+        title: "Industry-Academia Collaboration",
+        description:
+          "Facilitating internships, mentorships, and joint projects that connect students with industry experts",
+        points: [
+          "Industry internship programs",
+          "Expert mentorship initiatives",
+          "Real-world project collaborations",
+          "Industry exposure and networking",
+          "Career guidance and placement preparation",
+          "Joint research and development projects",
         ],
       },
     ],

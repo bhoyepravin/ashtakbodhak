@@ -212,8 +212,8 @@ Thank you!
             {/* Contact Form */}
             <AnimatedSection>
               <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
-                <h2 className="text-3xl font-bold text-[#184E43] mb-6">
-                  Send Message via WhatsApp
+                <h2 className="text-4xl text-center font-extrabold text-[#184E43] mb-6">
+                  Reach Out to Us
                 </h2>
 
                 {isSubmitted && (
@@ -322,9 +322,9 @@ Thank you!
                     whileTap={{ scale: 0.98 }}
                     className="w-full bg-green-600 hover:bg-green-700 text-white py-4 px-6 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center gap-3"
                   >
-                    <MessageCircle size={24} />
-                    Send via WhatsApp
-                    <Send size={20} />
+                    {/* <MessageCircle size={24} /> */}
+                    Submit
+                    {/* <Send size={20} /> */}
                   </motion.button>
                 </form>
               </div>
@@ -332,33 +332,6 @@ Thank you!
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      {/* <section className="py-16 bg-gradient-to-r from-[#184E43] to-[#2359B0] text-white">
-        <div className="container mx-auto px-4 text-center">
-          <AnimatedSection>
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Ready to Secure Your Digital Presence?
-            </h2>
-            <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-              Let's discuss how AshtakBodhak can help you build cyber resilience
-            </p>
-            <motion.a
-              href={`https://wa.me/919967045817?text=${encodeURIComponent(
-                "Hello! I would like to discuss cybersecurity services with AshtakBodhak."
-              )}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-3 bg-[#FB7E06] hover:bg-[#e57306] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
-            >
-              <MessageCircle size={24} />
-              Start Conversation on WhatsApp
-            </motion.a>
-          </AnimatedSection>
-        </div>
-      </section> */}
     </div>
   );
 };

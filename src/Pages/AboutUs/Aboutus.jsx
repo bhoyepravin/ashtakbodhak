@@ -143,7 +143,7 @@ const AboutUs = () => {
       </section>
 
       {/* Founder Message Section */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
@@ -163,7 +163,7 @@ const AboutUs = () => {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
       <TrainerComponent />
     </div>
   );

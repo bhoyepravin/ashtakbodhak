@@ -65,7 +65,7 @@ const aboutData = {
     name: "Founder & Chief Strategist",
     message:
       "I am absolutely delighted to unveil AshtakBodhak LLP - a purpose-driven initiative dedicated to advancing Information & Cybersecurity awareness, education, and strategic cyber resilience across India's digital landscape.",
-    cta: "Let's shape a safer digital future, together!!!",
+    //cta: "Let's shape a safer digital future, together!!!",
   },
   stats: [
     {
