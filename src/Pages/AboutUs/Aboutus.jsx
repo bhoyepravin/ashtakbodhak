@@ -5,7 +5,7 @@ import TrainerComponent from "./TrainerComponent";
 
 const AboutUs = () => {
   return (
-    <div className="min-h-screen pt-24 bg-gray-50">
+    <div className="min-h-screen pt-24 bg-gray-50 overflow-x-hidden">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-[#a8cfb8] via-[#98c5a8] to-[#88bb98]">
         <div className="container mx-auto px-4 text-center">
