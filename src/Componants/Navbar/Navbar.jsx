@@ -329,7 +329,7 @@ const Navbar = () => {
 
       {/* Navigation Bar */}
       <motion.nav
-        className={`fixed top-0 left-40 md:left-60 w-[calc(100%-160px)] md:w-[calc(100%-240px)] right-0 z-30 h-24 md:h-34 transition-all duration-300 ${
+        className={`fixed top-0 left-40 md:left-60 w-[calc(100%-160px)] md:w-[calc(100%-240px)] right-0 z-30 h-24 md:h-34  ${
           isScrolled ? "py-2 bg-[#c9e3d2] shadow-lg" : "py-3 bg-[#c9e3d2]"
         }`}
       >
