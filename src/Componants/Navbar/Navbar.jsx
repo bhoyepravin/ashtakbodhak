@@ -500,7 +500,7 @@ const Navbar = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
-                  to="/contact"
+                  to="/service"
                   className="bg-gradient-to-r from-[#fb7e04] to-[#e57306] text-white px-12 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 text-base flex items-center gap-2"
                 >
                   <Eye className="w-4 h-4" />
